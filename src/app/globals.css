@@ -163,16 +163,39 @@
   }
 }
 
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(
-      to bottom,
-      #ffffff 0%,
-      #ff00dc 50%,
-      #480ca8 100%
-    );
+    background: linear-gradient(to bottom, #ffffff 0%, #ff00dc 50%, #480ca8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #ffffff;
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  }
+
+  .animate-slide-left {
+    animation: slide-left var(--slide-duration, 8s) linear infinite;
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  .animation-pause {
+    animation-play-state: paused;
+  }
+
+  .group:hover .animation-pause {
+    animation-play-state: paused;
   }
 }

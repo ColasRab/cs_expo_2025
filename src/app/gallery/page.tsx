@@ -1,3 +1,4 @@
+"use client"
 import { GalleryHeader } from "@/components/gallery/GalleryHeader"
 import { GalleryCarousel } from "@/components/gallery/GalleryCarousel"
 import { events } from "./data/events"
@@ -6,7 +7,7 @@ import Galaxy from "@/components/global/Galaxy"
 
 export default function Gallery() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col select-none">
       <main
         className="relative flex-grow"
         style={{
@@ -14,7 +15,7 @@ export default function Gallery() {
             "linear-gradient(180deg, #1A1A1A 0%, #1A1A1A 30%, #480CA8 70%, #AF05C5 85%, #FF00DC 100%)",
         }}
       >
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0">
           <Galaxy
             mouseInteraction={false}
             mouseRepulsion={false}
@@ -30,7 +31,7 @@ export default function Gallery() {
           />
         </div>
 
-        <div className="relative z-10">
+        <div className="relative">
           <GalleryHeader />
           <GalleryCarousel events={events} />
         </div>
