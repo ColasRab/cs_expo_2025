@@ -291,11 +291,13 @@ html, body {
     --gradient-stop: 10%;
     --gradient-pink: 35%;
 
-    background: linear-gradient(to bottom,
-        #ffffff 0%,
-        #ffffff var(--gradient-stop),
-        #ff00dc var(--gradient-pink),
-        #ff00dc 100%);
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff var(--gradient-stop),
+      #ff00dc var(--gradient-pink),
+      #ff00dc 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px black;

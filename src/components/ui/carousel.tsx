@@ -2,9 +2,7 @@
 
 // Import useState
 import * as React from "react"
-import useEmblaCarousel, {
-  type UseEmblaCarouselType,
-} from "embla-carousel-react"
+import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react"
 import Image from "next/image"
 
 import { cn } from "@/lib/utils"
@@ -111,8 +109,7 @@ function Carousel({
         carouselRef,
         api: api,
         opts,
-        orientation:
-          orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
+        orientation: orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
         scrollPrev,
         scrollNext,
         canScrollPrev,
@@ -137,17 +134,9 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
   const { carouselRef, orientation } = useCarousel()
 
   return (
-    <div
-      ref={carouselRef}
-      className="overflow-hidden"
-      data-slot="carousel-content"
-    >
+    <div ref={carouselRef} className="overflow-hidden" data-slot="carousel-content">
       <div
-        className={cn(
-          "flex",
-          orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
-          className
-        )}
+        className={cn("flex", orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col", className)}
         {...props}
       />
     </div>
@@ -172,10 +161,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
-function CarouselPrevious({
-  className,
-  ...props
-}: React.ComponentProps<typeof Button>) {
+function CarouselPrevious({ className, ...props }: React.ComponentProps<typeof Button>) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
   const [isHovered, setIsHovered] = React.useState(false)
 
@@ -184,7 +170,7 @@ function CarouselPrevious({
       data-slot="carousel-previous"
       size="icon"
       className={cn(
-        "absolute size-10 rounded-full",
+        "absolute size-10 cursor-pointer rounded-full",
         orientation === "horizontal"
           ? "top-1/2 -left-12 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -198,11 +184,7 @@ function CarouselPrevious({
       {...props}
     >
       <Image
-        src={
-          isHovered
-            ? "/projects/left-hovered.svg"
-            : "/projects/left-arrow.svg"
-        }
+        src={isHovered ? "/projects/left-hovered.svg" : "/projects/left-arrow.svg"}
         alt="Previous"
         width={40}
         height={40}
@@ -213,10 +195,7 @@ function CarouselPrevious({
   )
 }
 
-function CarouselNext({
-  className,
-  ...props
-}: React.ComponentProps<typeof Button>) {
+function CarouselNext({ className, ...props }: React.ComponentProps<typeof Button>) {
   const { orientation, scrollNext, canScrollNext } = useCarousel()
   const [isHovered, setIsHovered] = React.useState(false)
 
@@ -225,7 +204,7 @@ function CarouselNext({
       data-slot="carousel-next"
       size="icon"
       className={cn(
-        "absolute size-10 rounded-full",
+        "absolute size-10 cursor-pointer rounded-full",
         orientation === "horizontal"
           ? "top-1/2 -right-12 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -239,11 +218,7 @@ function CarouselNext({
       {...props}
     >
       <Image
-        src={
-          isHovered
-            ? "/projects/right-hovered.svg"
-            : "/projects/right-arrow.svg"
-        }
+        src={isHovered ? "/projects/right-hovered.svg" : "/projects/right-arrow.svg"}
         alt="Next"
         width={40}
         height={40}
@@ -254,11 +229,4 @@ function CarouselNext({
   )
 }
 
-export {
-  type CarouselApi,
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-}
+export { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext }

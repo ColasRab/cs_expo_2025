@@ -4,9 +4,9 @@ import PixelBlast from "@/components/global/PixelBlast"
 
 export function ProjectsHero({ pageTitle, pageDesc }: { pageTitle: string; pageDesc: string }) {
   return (
-    <section className="relative mx-auto flex h-[85vh] flex-col items-center justify-center  text-center">
+    <section className="relative isolate mx-auto flex min-h-[70vh] flex-col items-center justify-center py-8 text-center sm:min-h-[80vh] sm:py-12 lg:min-h-[85vh]">
       {/* Pixel background */}
-      <div className="absolute inset-0 z-0 cursor-pointer -bottom-40">
+      <div className="absolute inset-0 -bottom-40 z-0 cursor-pointer">
         <PixelBlast
           variant="circle"
           pixelSize={9}
@@ -24,21 +24,20 @@ export function ProjectsHero({ pageTitle, pageDesc }: { pageTitle: string; pageD
         />
       </div>
 
-      {/* Glow */}
-      <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-        <div
-          aria-hidden
-          className="h-[450px] w-[85%] max-w-5xl animate-[pulseGlow_4s_ease-in-out_infinite] rounded-full bg-[radial-gradient(circle_at_center,rgba(255,0,204,0.25)_0%,rgba(200,0,255,0.15)_30%,rgba(0,0,0,0)_70%)] blur-[80px]"
-        />
-      </div>
-
       {/* Foreground content */}
-      <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center px-6">
-        <div className="pointer-events-auto flex max-w-4xl flex-col items-center gap-y-25 text-center">
-          <h1 className="font-monster text-gradient mb-0 text-4xl leading-[100px] -tracking-[2px] md:text-8xl lg:text-[96px]">
-            {pageTitle}
-          </h1>
-          <p className="font-helvetica indent-8 text-[20px] leading-[20px] font-extralight text-white">
+      <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="pointer-events-auto flex w-full max-w-4xl flex-col items-center justify-center gap-y-6 text-center sm:gap-y-10 lg:-translate-y-16 lg:gap-y-16 xl:-translate-y-20 xl:gap-y-20">
+          <div className="relative">
+            {/* Glow */}
+            <div className="pointer-events-none absolute top-1/2 left-1/2 z-0 -translate-x-1/2 -translate-y-1/2">
+              <div className="h-[150px] w-[400px] rounded-full bg-[radial-gradient(circle_at_center,#ff00dc_0%,transparent_70%)] opacity-[35%] blur-[60px] sm:h-[250px] sm:w-[600px] sm:opacity-[40%] sm:blur-[80px] lg:h-[350px] lg:w-[1000px] lg:blur-[100px]"></div>
+            </div>
+
+            <h1 className="font-monster text-gradient relative z-10 mb-0 px-2 text-4xl leading-tight -tracking-[1px] sm:px-0 sm:text-5xl md:text-6xl md:leading-tight lg:text-[80px] lg:leading-[90px] xl:text-[96px] xl:leading-[100px] xl:-tracking-[2px]">
+              {pageTitle}
+            </h1>
+          </div>
+          <p className="font-helvetica max-w-2xl px-6 text-sm leading-relaxed font-extralight text-white/95 sm:max-w-3xl sm:px-8 sm:text-base sm:leading-relaxed md:indent-8 lg:text-[16px] lg:leading-[22px]">
             {pageDesc}
           </p>
         </div>

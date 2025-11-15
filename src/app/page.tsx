@@ -1,49 +1,49 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
-import HeroSection from "@/components/home/hero-section";
-import Footer from "@/components/global/footer";
-import Navbar from "@/components/global/nav-bar";
-import FaultyTerminal from "@/components/FaultyTerminal";
-import Hero from "@/components/home/Hero";
-import SponsorCarousel from "@/components/home/sponsor-carousel";
+import { useEffect, useState } from "react"
+import HeroSection from "@/components/home/hero-section"
+import Footer from "@/components/global/footer"
+import Navbar from "@/components/global/nav-bar"
+import FaultyTerminal from "@/components/FaultyTerminal"
+import Hero from "@/components/home/Hero"
+import SponsorCarousel from "@/components/home/sponsor-carousel"
 
 export default function Home() {
-  const [scale, setScale] = useState(1.5);
-  const [dsize, setDsize] = useState(1.2);
-  const [grid, setGrid] = useState(2);
+  const [scale, setScale] = useState(1.5)
+  const [dsize, setDsize] = useState(1.2)
+  const [grid, setGrid] = useState(2)
 
-  console.log(scale, dsize);
+  console.log(scale, dsize)
 
   useEffect(() => {
     const handleResize = () => {
       // If screen width <= 768px (typical mobile breakpoint)
       if (window.innerWidth <= 768) {
-        setScale(1);
-        setDsize(1);
-        setGrid(1);
+        setScale(1)
+        setDsize(1)
+        setGrid(1)
       } else {
-        setScale(1.5);
-        setDsize(1.2);
-        setGrid(2);
+        setScale(1.5)
+        setDsize(1.2)
+        setGrid(2)
       }
-    };
+    }
 
-    handleResize(); // Run once on mount
-    window.addEventListener("resize", handleResize);
+    handleResize() // Run once on mount
+    window.addEventListener("resize", handleResize)
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   const assets = [
     { src: "/logo/expo_logo.png", type: "image" as const },
     { src: "/HOF/vector.svg", type: "image" as const },
     // Add more assets as needed
-  ];
+  ]
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-grow relative overflow-hidden">
+    <div className="flex min-h-screen flex-col">
+      <main className="relative flex-grow overflow-hidden">
         <div className="absolute inset-0 z-0 bg-[#0D0D0D]">
           <FaultyTerminal
             scale={scale} // 👈 Responsive scale
@@ -70,11 +70,12 @@ export default function Home() {
           <Navbar />
           <HeroSection />
           <div className="text-center text-white">
-            <p className="text-sm md:text-base lg:text-lg tracking-wide mb-3">
+            <p className="mb-3 text-sm tracking-wide md:text-base lg:text-lg">
               In Partnerships with
             </p>
-            <SponsorCarousel 
-              scale={typeof window !== "undefined" && window.innerWidth <= 768 ? 75 : 125} />
+            <SponsorCarousel
+              scale={typeof window !== "undefined" && window.innerWidth <= 768 ? 75 : 125}
+            />
           </div>
         </div>
       </main>
@@ -95,5 +96,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  );
+  )
 }

@@ -826,8 +826,8 @@ const groupsData = [
         ],
         "category": "Environment",
         "group_picture_url": [
-            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/phaeton1.jpg",
-            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/phaeton2.jpg"
+            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/phaeton2.jpg",
+            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/phaeton1.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Phaethon-Logo.png",
         "members": [
