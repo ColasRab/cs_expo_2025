@@ -23,7 +23,7 @@
     "next": "15.5.4",
     "ogl": "^1.0.11",
     "pnpm": "^10.18.2",
-    "postprocessing": "^6.37.8",
+    "postprocessing": "^6.38.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",

@@ -102,7 +102,7 @@ export default function Navbar() {
           </div>
 
           <Link 
-            href="#" 
+            href="/partners" 
             className="px-4 md:px-6 py-2 text-sm md:text-base hover:text-[#FF33E1] transition-colors"
           >
             Partners

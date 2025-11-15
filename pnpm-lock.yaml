@@ -54,8 +54,8 @@ importers:
         specifier: ^10.18.2
         version: 10.18.2
       postprocessing:
-        specifier: ^6.37.8
-        version: 6.37.8(three@0.181.0)
+        specifier: ^6.38.0
+        version: 6.38.0(three@0.181.1)
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -70,7 +70,7 @@ importers:
         version: 3.3.1
       three:
         specifier: ^0.181.0
-        version: 0.181.0
+        version: 0.181.1
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -697,10 +697,10 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postprocessing@6.37.8:
-    resolution: {integrity: sha512-qTFUKS51z/fuw2U+irz4/TiKJ/0oI70cNtvQG1WxlPKvBdJUfS1CcFswJd5ATY3slotWfvkDDZAsj1X0fU8BOQ==}
+  postprocessing@6.38.0:
+    resolution: {integrity: sha512-tisx8XN/PWTL3uXz2mt8bjlMS1wiOUSCK3ixi4zjwUCFmP8XW8hNhXwrxwd2zf2VmCyCQ3GUaLm7GLnkkBbDsQ==}
     peerDependencies:
-      three: '>= 0.157.0 < 0.181.0'
+      three: '>= 0.157.0 < 0.182.0'
 
   prettier-plugin-tailwindcss@0.6.14:
     resolution: {integrity: sha512-pi2e/+ZygeIqntN+vC573BcW5Cve8zUB0SSAGxqpB4f96boZF4M3phPVoOFCeypwkpRYdi7+jQ5YJJUwrkGUAg==}
@@ -825,8 +825,8 @@ packages:
     resolution: {integrity: sha512-nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==}
     engines: {node: '>=18'}
 
-  three@0.181.0:
-    resolution: {integrity: sha512-KGf6EOCOQGshXeleKxpxhbowQwAXR2dLlD93egHtZ9Qmk07Saf8sXDR+7wJb53Z1ORZiatZ4WGST9UsVxhHEbg==}
+  three@0.181.1:
+    resolution: {integrity: sha512-bz9xZUQMw3pJbjKy7roiwXWgAp+oVUa+4k5o0oBAQ+IFJuru1xzvtk63h6k72XZanXS/SgoEhV6927Vgazyq2w==}
 
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
@@ -1359,9 +1359,9 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postprocessing@6.37.8(three@0.181.0):
+  postprocessing@6.38.0(three@0.181.1):
     dependencies:
-      three: 0.181.0
+      three: 0.181.1
 
   prettier-plugin-tailwindcss@0.6.14(prettier@3.6.2):
     dependencies:
@@ -1436,7 +1436,7 @@ snapshots:
       minizlib: 3.1.0
       yallist: 5.0.0
 
-  three@0.181.0: {}
+  three@0.181.1: {}
 
   tr46@0.0.3: {}
 
