@@ -62,7 +62,7 @@ function EventsPage() {
             {/* LEFT: Info */}
             <div className="space-y-6 order-1">
               <p
-                className="font-avolta font-normal md:text-[48px] text-4xl text-white leading-[40px] tracking-[0.1em]"
+                className="font-avolta text-4xl md:text-[48px] text-white leading-[40px] tracking-[0.1em] mb-1"
                 style={{
                   filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.8))",
                 }}
@@ -76,18 +76,17 @@ function EventsPage() {
                   filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                 }}
               >
-                November 10, 2025 | 9:00 AM - 5:00 PM
+                November 13, 2025 | 9:00 AM - 5:00 PM
               </p>
 
-              <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px]">
-                Join us on the first day of CS Expo as bright fourth-year students present
-                their innovative theses on Medicine & Health and NLP.
+              <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
+                Explore projects in Computer Vision, Education, Environment, and Agriculture.
               </p>
 
               {/* Keynote Talk */}
               <div className="space-y-4 text-right">
                 <p
-                  className="font-avolta text-4xl md:text-[36px] text-white leading-[40px]"
+                  className="font-avolta text-4xl md:text-[36px] text-white leading-[40px] mb-1"
                   style={{
                     filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.8))",
                   }}
@@ -102,7 +101,7 @@ function EventsPage() {
                 >
                   Digital Transformation in the Philippines
                 </p>
-                <p className="text-white/90 text-sm md:text-[20px] font-helvetica leading-relaxed">
+                <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue felis sapien,
                   eu finibus ante pretium eget.
                 </p>
@@ -112,9 +111,9 @@ function EventsPage() {
             {/* RIGHT: Teams */}
             <div className="w-full order-3 lg:order-2">
               <TeamCategoryBox
-                categories={box1.categories}
-                teams={box1.teams}
-                onCategorySelect={setSelectedDay1Category}
+                categories={box2.categories}
+                teams={box2.teams}
+                onCategorySelect={setSelectedDay2Category}
               />
             </div>
           </div>
@@ -126,16 +125,16 @@ function EventsPage() {
             {/* LEFT: Teams (reversed layout) */}
             <div className="w-full order-3 lg:order-1">
               <TeamCategoryBox
-                categories={box2.categories}
-                teams={box2.teams}
-                onCategorySelect={setSelectedDay2Category}
+                categories={box1.categories}
+                teams={box1.teams}
+                onCategorySelect={setSelectedDay1Category}
               />
             </div>
 
             {/* RIGHT: Info */}
             <div className="space-y-6 order-1 lg:order-2">
               <p
-                className="font-avolta text-4xl md:text-[48px] text-white leading-[40px] tracking-[0.1em]"
+                className="font-avolta text-4xl md:text-[48px] text-white leading-[40px] tracking-[0.1em] mb-1"
                 style={{
                   filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.8))",
                 }}
@@ -149,21 +148,21 @@ function EventsPage() {
                   filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                 }}
               >
-                November 11, 2025 | 9:00 AM - 5:00 PM
+                November 14, 2025 | 9:00 AM - 5:00 PM
               </p>
 
-              <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px]">
-                Explore projects in Computer Vision, Education, Environment, and Agriculture.
+              <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
+                Join us on the first day of CS Expo as bright fourth-year students present their innovative theses on Medicine & Health and Natural Language Processing.
               </p>
 
               <div className="space-y-4 text-right">
                 <p
-                  className="font-avolta text-4xl md:text-[36px] text-white leading-[40px]"
+                  className="font-avolta text-4xl md:text-[36px] text-white leading-[40px] mb-1"
                   style={{
                     filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.8))",
                   }}
                 >
-                  Keynote Talks
+                  Keynote Talk
                 </p>
                 <p
                   className="font-dreamer text-[#FF00DC] text-sm md:text-[20px] leading-[20px] tracking-[0.1em]"
@@ -171,9 +170,9 @@ function EventsPage() {
                     filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                   }}
                 >
-                  Ethics in Emerging Technologies
+                  Ethics in Emerging Technologies: Where Should We Draw the Line?
                 </p>
-                <p className="text-white/90 text-sm md:text-[20px] font-helvetica leading-relaxed">
+                <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis
                   quis massa sit amet.
                 </p>

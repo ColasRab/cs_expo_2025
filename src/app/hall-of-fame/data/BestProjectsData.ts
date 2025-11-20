@@ -57,7 +57,7 @@ export const BestProjects: BestProjectsProps[] = [
     img: groupsData[11].group_picture_url.at(0) || "/HOF/placeholder.jpg",
   },
   {
-    title: "NLP",
+    title: "Natural Language Processing",
     groupName: groupsData[30].group_name,
     thesisTitle: groupsData[30].thesis_title || "Thesis Title",
     members: groupsData[30].members || ["Member 1", "Member 2", "Member 3"],

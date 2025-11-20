@@ -23,7 +23,7 @@ const groupsData = [
             "Janella Myzel B. Sy"
         ],
         "thesis_mentor": "Ms. Fanny C. Almeniana",
-        "thesis_description": "Piyu-V is a reasearch-driven decision support tool leveraging advanced machine learning models like ST-GCN and LSTM to optimize public transportation. It predcits demand, provides route insights, and enhances resource allocation by analyzing historical data, aligning urban planning with sustainability and efficiency for stakeholders like policymakers, transit operators and commuters.",
+        "thesis_description": "Piyu-V is a research-driven decision support tool leveraging advanced machine learning models like ST-GCN and LSTM to optimize public transportation. It predcits demand, provides route insights, and enhances resource allocation by analyzing historical data, aligning urban planning with sustainability and efficiency for stakeholders like policymakers, transit operators and commuters.",
         "thesis_title": "Piyu-V: A Hybrid Public Transit Optimization Using Long Short-Term Memory and Spatial-Temporal Graph Convolutional Networks "
     },
     {
@@ -251,7 +251,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Byte-sized/IMG_8558.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Byte-sized/IMG_8579.jpg"
         ],
-        "category": "NLP",
+        "category": "Natural Language Processing",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/bytesized1.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/bytesized2.jpg"
@@ -418,7 +418,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Code%20Crusaders/IMG_1294.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Code%20Crusaders/IMG_1287.jpg"
         ],
-        "category": "NLP",
+        "category": "Natural Language Processing",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/codecrusaders1.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/codecrusaders2.jpg"
@@ -473,7 +473,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Codeware/IMG_1792.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Codeware/IMG_1825.jpg"
         ],
-        "category": "NLP",
+        "category": "Natural Language Processing",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/codeware1.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/codeware2.jpg"
@@ -500,7 +500,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/CTech/IMG_9746.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/CTech/IMG_9727.jpg"
         ],
-        "category": "NLP",
+        "category": "Natural Language Processing",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/ctech1.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/ctech2.jpg"
@@ -689,7 +689,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/JPEC/IMG_8044.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/JPEC/IMG_8055.jpg"
         ],
-        "category": "NLP",
+        "category": "Natural Language Processing",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/jpec1.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/jpec2.jpg"
@@ -797,7 +797,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Operating%20Sis-Team/IMG_1049.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Operating%20Sis-Team/IMG_1075.jpg"
         ],
-        "category": "NLP",
+        "category": "Natural Language Processing",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/operating1.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/operating2.jpg"
@@ -996,7 +996,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Techne/IMG_0857.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Techne/IMG_0886.jpg"
         ],
-        "category": "NLP",
+        "category": "Natural Language Processing",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/techne1.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/techne2.jpg"
@@ -1052,7 +1052,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/TechXplorers/IMG_7986.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/TechXplorers/IMG_8006.jpg"
         ],
-        "category": "NLP",
+        "category": "Natural Language Processing",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/explorers1.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/explorers2.jpg"

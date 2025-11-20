@@ -83,7 +83,7 @@ export default function AboutPage() {
     <div className="relative min-h-screen text-white overflow-hidden">
       {/* Background */}
       <div className="fixed inset-0 z-0">
-        <PixelBlast 
+        <PixelBlast
           variant="circle"
           pixelSize={4}
           color="#b19eef"
@@ -99,7 +99,7 @@ export default function AboutPage() {
         <Navbar />
 
         {/* About CS Expo Section */}
-        <section className="container mx-auto px-4 sm:px-6 md:px-10 pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20">
+        <section className="container mx-auto px-4 sm:px-6 md:px-10 pt-24 sm:pt-28 md:pt-32 pb-6 sm:pb-6 md:pb-16">
           <div className="relative">
             {/* Gradient overlay */}
             <div className="absolute inset-0 pointer-events-none" />
@@ -109,11 +109,13 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-[#FF33E1]/20 blur-3xl rounded-full scale-150" />
                 <h1
-                  className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-monster text-center px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-gradient-to-b from-white to-[#ff00dc] bg-clip-text text-transparent"
-                  style={{
-                    textShadow: '0px 0px 5.2px rgba(255,0,220,0.8)',
-                    letterSpacing: 'clamp(1px, 0.3vw, 4.32px)'
-                  }}
+                  className="font-monster text-gradient text-2xl leading-[100px] -tracking-[2px] md:text-8xl lg:text-[96px] px-6"
+                  style={
+                    {
+                      "--gradient-stop": "35%",
+                      "--gradient-pink": "60%",
+                    } as React.CSSProperties
+                  }
                 >
                   ABOUT CS EXPO
                 </h1>
@@ -126,7 +128,7 @@ export default function AboutPage() {
               <div className="flex justify-center md:justify-end order-2 md:order-1">
                 <div className="relative w-full max-w-sm sm:max-w-md bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src={posterPlaceholder}
+                    src={"/about/poster.png"}
                     alt="CS Expo 2025 Digital Reverie Poster"
                     width={536}
                     height={714}
@@ -138,14 +140,14 @@ export default function AboutPage() {
 
               {/* Text Content */}
               <div className="flex flex-col justify-center order-1 md:order-2">
-                <div className="prose prose-invert max-w-none">
-                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-300">
+                <div className="prose prose-invert max-w-none font-helvetica">
+                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus.
                   </p>
-                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-300 mt-3 sm:mt-4">
+                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus.
                   </p>
-                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-300 mt-3 sm:mt-4">
+                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white mt-3 sm:mt-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus.
                   </p>
                 </div>
@@ -155,18 +157,22 @@ export default function AboutPage() {
         </section>
 
         {/* The Visionary Teams Section */}
-        <section className="container mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 md:py-20">
+        <section className="container mx-auto px-4 sm:px-6 md:px-10 py-4 sm:py-16 md:py-20">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-monster mb-3 sm:mb-4 bg-gradient-to-b from-white to-[#ff00dc] bg-clip-text text-transparent px-2"
-              style={{
-                textShadow: '0px 0px 5.2px rgba(255,0,220,0.8)',
-                letterSpacing: 'clamp(1px, 0.3vw, 4.32px)'
-              }}
+            <h1
+              className="font-monster text-gradient text-2xl leading-[100px] -tracking-[2px] md:text-5xl lg:text-[68px] px-6"
+              style={
+                {
+                  "--gradient-stop": "35%",
+                  "--gradient-pink": "60%",
+                } as React.CSSProperties
+              }
             >
               THE VISIONARY TEAMS
-            </h2>
-            <p className="text-xs sm:text-sm md:text-base lg:text-xl text-gray-400 font-avolta px-2">43 blablabla, blablabla</p>
+            </h1>
+            <p className="text-4xl sm:text-sm md:text-base lg:text-4xl text-white font-avolta px-2 drop-shadow-[0_2px_6px_#FFFFFFCC]">
+              43 blablabla, blablabla
+            </p>
           </div>
 
           {/* Team Grid with Navigation */}
@@ -227,9 +233,8 @@ export default function AboutPage() {
                 <button
                   key={index}
                   onClick={() => setCurrentTeamPage(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentTeamPage ? 'bg-[#FF33E1] w-6' : 'bg-white/30'
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all ${index === currentTeamPage ? 'bg-[#FF33E1] w-6' : 'bg-white/30'
+                    }`}
                   aria-label={`Go to page ${index + 1}`}
                 />
               ))}
@@ -247,37 +252,51 @@ export default function AboutPage() {
             <div className="relative flex justify-center mb-6 sm:mb-8">
               <div className="relative">
                 <div className="relative text-center px-4 sm:px-6 md:px-8 py-3 sm:py-4">
-                  <h2
-                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold font-monster mb-3 sm:mb-4 bg-gradient-to-b from-white to-[#ff00dc] bg-clip-text text-transparent"
-                    style={{
-                      textShadow: '0px 0px 5.2px rgba(255,0,220,0.8)',
-                      letterSpacing: 'clamp(0.5px, 0.2vw, 4.32px)'
-                    }}
+                  <div className="pointer-events-none absolute top-1/2 left-1/2 z-0 -translate-x-1/2 -translate-y-[70%]">
+                    <div className="h-[150px] w-[400px] rounded-full bg-[radial-gradient(circle_at_center,#ff00dc_0%,transparent_70%)] opacity-[35%] blur-[60px] sm:h-[250px] sm:w-[600px] sm:opacity-[40%] sm:blur-[80px] lg:h-[350px] lg:w-[1000px] lg:blur-[100px]"></div>
+                  </div>
+
+                  <h1
+                    className="font-monster text-gradient text-2xl leading-[100px] -tracking-[2px] md:text-8xl lg:text-[96px] px-6"
+                    style={
+                      {
+                        "--gradient-stop": "10%",
+                        "--gradient-pink": "30%",
+                      } as React.CSSProperties
+                    }
                   >
                     ORGANIZING COMMITTEES
-                  </h2>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-400">The Pillars of CS Expo 2025</p>
+                  </h1>
+                  <p className="text-4xl sm:text-sm md:text-base lg:text-4xl text-white font-avolta py-16 drop-shadow-[0_2px_6px_#FFFFFFCC]">
+                    The Pillars of CS EXPO 2025
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Categories */}
             <div className="max-w-6xl mx-auto mb-6 sm:mb-8">
-              <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6">
+              <div className="flex flex-wrap justify-center gap-10 mb-4 sm:mb-6">
                 {['Event Head', 'Externals', 'Publicity', 'Creatives', 'Media', 'Publications'].map((category) => (
                   <button
                     key={category}
-                    className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm rounded-full border border-white/30 hover:border-[#FF33E1] hover:bg-[#FF33E1]/10 transition-all"
+                    className="
+          min-w-[120px] px-2 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap
+          text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc]
+        "
                   >
                     {category}
                   </button>
                 ))}
               </div>
-              <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
+
+              <div className="flex flex-wrap justify-center gap-10">
                 {['Programs', 'Technicals', 'Finance', 'Developers', 'Documentations', 'Logistics'].map((category) => (
                   <button
                     key={category}
-                    className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm rounded-full border border-white/30 hover:border-[#FF33E1] hover:bg-[#FF33E1]/10 transition-all"
+                    className="
+          min-w-[120px] px-2 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap
+          text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc]
+        "
                   >
                     {category}
                   </button>
@@ -343,15 +362,17 @@ export default function AboutPage() {
         <section className="container mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 md:py-20">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-6 sm:mb-8">
-              <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-monster mb-6 bg-gradient-to-b from-white to-[#ff00dc] bg-clip-text text-transparent px-2"
-                style={{
-                  textShadow: '0px 0px 5.2px rgba(255,0,220,0.8)',
-                  letterSpacing: 'clamp(1px, 0.3vw, 4.32px)'
-                }}
+              <h1
+                className="font-monster text-gradient text-2xl leading-[100px] -tracking-[2px] md:text-5xl lg:text-[56px] px-6"
+                style={
+                  {
+                    "--gradient-stop": "35%",
+                    "--gradient-pink": "60%",
+                  } as React.CSSProperties
+                }
               >
                 FACULTY MEMBERS
-              </h2>
+              </h1>
             </div>
 
             {/* Faculty Carousel */}
@@ -410,9 +431,8 @@ export default function AboutPage() {
                   <button
                     key={index}
                     onClick={() => setCurrentFacultyIndex(index)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      index === currentFacultyIndex ? 'bg-[#FF33E1] w-6' : 'bg-white/30'
-                    }`}
+                    className={`w-2 h-2 rounded-full transition-all ${index === currentFacultyIndex ? 'bg-[#FF33E1] w-6' : 'bg-white/30'
+                      }`}
                     aria-label={`View faculty member ${index + 1}`}
                   />
                 ))}
