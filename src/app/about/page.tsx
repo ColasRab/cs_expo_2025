@@ -126,7 +126,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start max-w-7xl mx-auto">
               {/* Poster */}
               <div className="flex justify-center md:justify-end order-2 md:order-1">
-                <div className="relative w-full max-w-sm sm:max-w-md bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative w-full max-w-sm sm:max-w-md bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl select-none">
                   <Image
                     src={"/about/poster.png"}
                     alt="CS Expo 2025 Digital Reverie Poster"
@@ -181,7 +181,7 @@ export default function AboutPage() {
             <button
               onClick={() => setCurrentTeamPage((prev) => (prev > 0 ? prev - 1 : prev))}
               disabled={currentTeamPage === 0}
-              className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 lg:-translate-x-12 z-10 disabled:opacity-30 disabled:cursor-not-allowed hover:scale-110 transition-transform"
+              className="hidden sm:block cursor-pointer absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 lg:-translate-x-12 z-10 disabled:opacity-30 disabled:cursor-not-allowed hover:scale-110 transition-transform"
               aria-label="Previous page"
             >
               <div className="w-8 h-8 md:w-9 md:h-9 rounded-full border-2 border-white/50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
@@ -275,13 +275,13 @@ export default function AboutPage() {
             </div>
 
             <div className="max-w-6xl mx-auto mb-6 sm:mb-8">
-              <div className="flex flex-wrap justify-center gap-10 mb-4 sm:mb-6">
+              <div className="flex flex-wrap justify-center gap-10 mb-4 sm:mb-6 cursor-pointer">
                 {['Event Head', 'Externals', 'Publicity', 'Creatives', 'Media', 'Publications'].map((category) => (
                   <button
                     key={category}
                     className="
           min-w-[120px] px-2 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap
-          text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc]
+          text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc] cursor-pointer
         "
                   >
                     {category}
@@ -289,13 +289,13 @@ export default function AboutPage() {
                 ))}
               </div>
 
-              <div className="flex flex-wrap justify-center gap-10">
+              <div className="flex flex-wrap justify-center gap-10 ">
                 {['Programs', 'Technicals', 'Finance', 'Developers', 'Documentations', 'Logistics'].map((category) => (
                   <button
                     key={category}
                     className="
           min-w-[120px] px-2 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap
-          text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc]
+          text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc] cursor-pointer
         "
                   >
                     {category}
@@ -415,7 +415,7 @@ export default function AboutPage() {
               {/* Right Arrow - Hidden on mobile */}
               <button
                 onClick={() => setCurrentFacultyIndex((prev) => (prev < facultyMembers.length - 1 ? prev + 1 : 0))}
-                className="hidden sm:block absolute right-0 top-1/3 -translate-y-1/2 translate-x-4 md:translate-x-8 lg:translate-x-12 z-10 hover:scale-110 transition-transform"
+                className="hidden sm:block cursor-pointer absolute right-0 top-1/3 -translate-y-1/2 translate-x-4 md:translate-x-8 lg:translate-x-12 z-10 hover:scale-110 transition-transform"
                 aria-label="Next faculty"
               >
                 <div className="w-8 h-8 md:w-9 md:h-9 rounded-full border-2 border-white/50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
@@ -431,7 +431,7 @@ export default function AboutPage() {
                   <button
                     key={index}
                     onClick={() => setCurrentFacultyIndex(index)}
-                    className={`w-2 h-2 rounded-full transition-all ${index === currentFacultyIndex ? 'bg-[#FF33E1] w-6' : 'bg-white/30'
+                    className={`w-2 h-2 rounded-full transition-all cursor-pointer ${index === currentFacultyIndex ? 'bg-[#FF33E1] w-6' : 'bg-white/30'
                       }`}
                     aria-label={`View faculty member ${index + 1}`}
                   />

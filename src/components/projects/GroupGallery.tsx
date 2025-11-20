@@ -41,7 +41,7 @@ export default function GroupGallery({ details }: GroupGalleryProps) {
       
       {/* Carousel Wrapper */}
       {allImages.length > 0 ? (
-        <div className="w-full max-w-5xl relative sm:mt-0 md:mt-12">
+        <div className="w-full max-w-5xl relative sm:mt-0 md:mt-12 select-none">
           
           <div className="px-12 md:px-24 w-full">
             <Carousel opts={{ align: "start", loop: true }} className="w-full relative">

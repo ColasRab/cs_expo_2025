@@ -26,7 +26,7 @@ export default function ProjectsCard({
     <Link href={`/projects/${slug}`} className="block w-full max-w-[400px]">
       <div className="relative group cursor-pointer h-full">
         <div className="project-card-bg p-4 w-full h-full flex flex-col transition-all duration-300 ease-in-out">
-          <div className="relative w-full aspect-[420/594] overflow-hidden rounded-[16px]">
+          <div className="relative w-full aspect-[420/594] overflow-hidden rounded-[16px] select-none">
             <Image
               src={poster || "/projects/default_poster.jpg"}
               alt={`${appTitle} poster`}
