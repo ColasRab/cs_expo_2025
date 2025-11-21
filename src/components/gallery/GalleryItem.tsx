@@ -11,7 +11,7 @@ export function GalleryItem({ photo }: ImageProps) {
         draggable={false}
         loading="lazy"
         decoding="async"
-        className="h-auto w-full rounded-2xl object-cover select-none"
+        className="rounded-2xl select-none"
       />
     </div>
   )
