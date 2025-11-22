@@ -17,7 +17,7 @@ export function GalleryColumn({ events }: Props) {
           <button
             key={event.name}
             onClick={() => setSelected(idx)}
-            className={`rounded-lg border px-6 py-2 text-sm font-medium transition-all ${
+            className={`rounded-lg border px-6 py-2 text-sm font-medium transition-all cursor-pointer ${
               selected === idx
                 ? "border-white bg-white text-black"
                 : "border-white bg-transparent text-white hover:bg-white/10"

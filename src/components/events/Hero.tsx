@@ -28,7 +28,7 @@ export default function Hero({
     expo: {
       backgroundText: "CS EXPO",
       accentColor: "#FF37E3",
-      titleGradient:
+      titleGradient:                            
         "linear-gradient(180deg, #FFFFFF 10%, #FFFFFF 0%, #FF37E3 30%, #FF00DC 70%, #FF00DC 100%)",
       titleGlow: "drop-shadow(0px 0px 4px rgba(255, 55, 227, 0.8))",
       svgFlipped: false,
@@ -106,10 +106,10 @@ export default function Hero({
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   return (
-    <section className="relative pt-20 md:pt-20 lg:pt-20 pb-12 px-4 text-center overflow-hidden old-tv">
+    <section className="relative pt-[180px] md:pt-[210px] lg:pt-[240px] pb-8 mb-16 md:mb-8 lg:mb-16 px-4 text-center overflow-hidden old-tv">
       {/* 🔹 Background text pattern */}
       <div
-        className="absolute top-[-100px] md:top-[-150px] lg:top-[-200px] left-0 right-0 flex flex-col items-center pointer-events-none z-0"
+        className="absolute -top-[220px] md:-top-[260px] lg:-top-[320px] left-0 right-0 flex flex-col items-center pointer-events-none z-0"
         style={{
           maskImage:
             "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 70%, transparent 100%)",
@@ -117,7 +117,7 @@ export default function Hero({
             "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 70%, transparent 100%)",
         }}
       >
-        {[...Array(10)].map((_, i) => (
+        {[...Array(17)].map((_, i) => (
           <div
             key={i}
             className="font-monster text-[40px] md:text-[60px] lg:text-[80px] whitespace-nowrap tracking-widest leading-[30px] md:leading-[45px] lg:leading-[60px] opacity-30"
@@ -136,7 +136,7 @@ export default function Hero({
       <div
         className="absolute inset-[-50px] md:inset-[-75px] lg:inset-[-100px] flex items-center justify-center pointer-events-none z-0"
         style={{
-          transform: `translate(${currentConfig.svgTranslateX}, calc(${currentConfig.svgTranslateY} - 20px)) ${
+          transform: `translate(${currentConfig.svgTranslateX}, calc(${currentConfig.svgTranslateY} - -20px)) ${
             currentConfig.svgFlipped ? "scaleX(-1)" : "scaleX(1)"
           }`,
         }}
@@ -150,7 +150,7 @@ export default function Hero({
 
       {/* 🔹 Floating Team Logos */}
       <div className="absolute inset-0 pointer-events-none z-[25]">
-        {teams.slice(0, 16).map((team, i) => {
+        {teams.slice(0, 11).map((team, i) => {
           const pos = logoPosition(i, isMobile);
           return (
             <img
@@ -163,7 +163,7 @@ export default function Hero({
                 top: pos.top,
                 width: `${pos.size}px`,
                 height: `${pos.size}px`,
-                transform: `translate(-50%, -50%) rotate(${pos.rotate}deg)`,
+                transform: `translate(-50%, 150%) rotate(${pos.rotate}deg)`,
                 opacity: pos.opacity,
                 objectFit: "contain",
                 filter:

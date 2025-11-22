@@ -24,7 +24,7 @@ export default function PartnerCard({
   return (
     <div className="mx-auto w-full max-w-[330px] md:h-[410px] h-auto flex flex-col bg-[#FF37E31A] rounded-[16px] border-[#A2108D] border-[1px] overflow-hidden shadow-lg relative p-6">
       {/* Logo */}
-      <div className="w-full h-[180px] md:w-[250px] md:h-[250px] mb-6 flex items-center justify-center mx-auto">
+      <div className="w-full h-[180px] md:w-[250px] md:h-[250px] mb-6 flex items-center justify-center mx-auto select-none">
         <img 
           src={logo} 
           alt={name}

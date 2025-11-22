@@ -10,21 +10,18 @@ export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   return (
-    <main className="bg-black">
+    <main className="bg-[#0D0D0D]">
       <Navbar />
       <ProjectsHero
         pageTitle="Project Collection"
         pageDesc="The Project Collection stands as a testament to the creativity, technical skill, and perseverance of the graduating students of the Computer Science program. Each project represents months of research, experimentation, and innovation, turning abstract ideas into tangible digital experiences that push the boundaries of what’s possible.
 
-Within this collection are applications and systems built to address real-world challenges across diverse domains. From data analytics that reveal insights hidden in complex datasets, to health-focused platforms that harness technology to improve lives, and natural language processing (NLP) systems that bridge human understanding and machine intelligence — every project carries a unique story of collaboration and purpose.
 
 These projects were developed under the guidance of dedicated mentors and reflect each group’s distinct identity, creativity, and technical mastery. They demonstrate not only proficiency in software engineering and research methodologies, but also a deep commitment to solving meaningful problems through innovation. This collection reveals the next generation of computer scientists whose ideas shape the digital landscape of tomorrow."
       />
-      <div className="bg-gradient-to-b from-[#0D0D0D] from-[2%] to-[#0F0019] to-[12%] pb-16">
-        <CategoryFilters onFilterChange={setSelectedCategory} />
-        <div className="w-full max-w-6xl mx-auto border-t border-white mb-2"></div>
-        <ProjectsGrid selectedCategory={selectedCategory} />
-      </div>
+      <CategoryFilters onFilterChange={setSelectedCategory} />
+      <div className="w-full max-w-6xl mx-auto border-t border-white mb-2"></div>
+      <ProjectsGrid selectedCategory={selectedCategory} />
       <Footer />
     </main>
   );

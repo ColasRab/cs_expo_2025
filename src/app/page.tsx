@@ -65,7 +65,7 @@ export default function Home() {
             brightness={1}
           />
         </div>
-
+        <Navbar />
         <div className="relative z-10 bg-gradient-to-b from-transparent via-transparent to-[#0F0019]">
           <HeroSection />
           <div className="text-center text-white px-4">

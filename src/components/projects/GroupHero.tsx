@@ -25,7 +25,7 @@ export default function GroupHero({
       <div
         className="
           relative flex flex-col items-center justify-center text-white overflow-hidden
-          min-h-[40vh] sm:min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[80vh]
+          min-h-[40vh] sm:min-h-[50vh] md:min-h-[60vh] lg:min-h-[80vh] xl:min-h-[90vh]
         "
       >
         {/* 🔹 Background blur layer (soft edges) */}

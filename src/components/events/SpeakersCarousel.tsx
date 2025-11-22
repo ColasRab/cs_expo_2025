@@ -55,7 +55,7 @@ export default function SpeakersCarousel({ speakers, titleColor = '#FF00DC' }: S
                 <div className="w-full max-w-[1225px] h-auto md:h-[500px] lg:h-[550px] flex flex-col md:flex-row items-center justify-between rounded-[20px] gap-6 md:gap-0 mx-auto">
                   
                   {/* Speaker Image */}
-                  <div className="w-full md:w-[400px] lg:w-[500px] h-[300px] md:h-[400px] lg:h-[500px] bg-gray-400 rounded-[16px] flex-shrink-0 overflow-hidden">
+                  <div className="w-full md:w-[400px] lg:w-[500px] h-[300px] md:h-[400px] lg:h-[500px] bg-gray-400 rounded-[16px] flex-shrink-0 overflow-hidden select-none">
                     <img 
                       src={speaker.image} 
                       alt={speaker.name}

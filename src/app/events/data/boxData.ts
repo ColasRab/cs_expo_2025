@@ -4,7 +4,7 @@ export type Group = typeof groupsData[0];
 
 // Category mapping to match your requirements
 const CATEGORY_MAPPING: Record<string, string[]> = {
-  'NLP': ['NLP'],
+  'Natural Language Processing': ['Processing'],
   'Computer Vision': ['Computer Vision'],
   'Medicine and Health': ['Medicine and Health'],
   'Education': ['Education'],
@@ -25,7 +25,7 @@ function normalizeCategory(category: string): string {
     'Agriculture': 'Agriculture',
     'Computer Vision': 'Computer Vision',
     'CV': 'Computer Vision',
-    'NLP': 'NLP',
+    'Natural Language Processing': 'Natural Language Processing',
     'Education': 'Education'
   };
   
@@ -37,7 +37,7 @@ function normalizeCategory(category: string): string {
  */
 export function getTeamsByCategory() {
   const categorized: Record<string, Group[]> = {
-    'NLP': [],
+    'Natural Language Processing': [],
     'Computer Vision': [],
     'Medicine and Health': [],
     'Education': [],
@@ -103,16 +103,16 @@ export function getTeamCountByCategory() {
  * Structure for Box 1 (NLP + Medicine & Health)
  */
 export function getBox1Data() {
-  const nlpTeams = getTeamsBySpecificCategory('NLP');
+  const nlpTeams = getTeamsBySpecificCategory('Natural Language Processing');
   const medicineTeams = getTeamsBySpecificCategory('Medicine and Health');
   
   return {
-    categories: ['NLP', 'Medicine and Health'],
+    categories: ['Natural Language Processing', 'Medicine and Health'],
     teams: [
       ...nlpTeams.map(team => ({
         id: team.id,
         name: team.group_name,
-        category: 'NLP',
+        category: 'Natural Language Processing',
         logo: team.group_logo,
         poster: team.thesis_poster_url,
         members: team.members
