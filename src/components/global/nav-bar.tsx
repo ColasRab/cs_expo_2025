@@ -143,6 +143,7 @@ export default function Navbar() {
                   >
                     Collections
                   </Link>
+                  
                 </div>
               </div>
             )}

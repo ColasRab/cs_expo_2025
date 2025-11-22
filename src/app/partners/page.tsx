@@ -7,18 +7,19 @@ import Hero from '@/components/partners/Hero';
 import PartnerTierFilters from '@/components/partners/PartnerTierFilters';
 import PartnersGrid from '@/components/partners/PartnersGrid';
 import { allPartners } from './data/partnersData';
+import { ProjectsHero } from "@/app/hall-of-fame/ui/ProjectsHero";
 
 function PartnersPage() {
     const [selectedTier, setSelectedTier] = useState<string | null>(null);
 
     return(
-        <main className="bg-black">
+        <main className="bg-[#0D0D0D]">
             <Navbar />
             
             {/* Hero Component */}
-            <Hero
-                title="OUR PARTNERS"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim."
+            <ProjectsHero
+                pageTitle="OUR PARTNERS"
+                pageDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim."
             />
 
             <div className="bg-gradient-to-b from-[#0D0D0D] from-[2%] to-[#0F0019] to-[12%] pb-16">

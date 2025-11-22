@@ -1,3 +1,4 @@
+// GroupGallery.tsx
 import Image from "next/image";
 import {
   Carousel,
@@ -37,43 +38,44 @@ export default function GroupGallery({ details }: GroupGalleryProps) {
       >
         Gallery
       </h1>
-        {/* Carousel */}
+      
+      {/* Carousel Wrapper */}
       {allImages.length > 0 ? (
-        <div className="w-full max-w-5xl px-10 sm:mt-0 md:mt-12 relative">
-          <Carousel opts={{ align: "start", loop: true }} className="w-full">
-            <div className="rounded-[20px] overflow-hidden relative shadow-lg shadow-black/40">
-              <CarouselContent>
-                {allImages.map((photoUrl, index) => (
-                  <CarouselItem
-                    key={`gallery-${index}`}
-                    className="flex justify-center items-center"
-                  >
-                    {/* ✅ Dynamic container that resizes based on image ratio */}
-                    <div className="relative inline-block rounded-[20px] overflow-hidden">
-                      <Image
-                        src={
-                          photoUrl && photoUrl.length > 0
-                            ? photoUrl
-                            : "/projects/default_group_bg.jpg"
-                        }
-                        alt={`${groupName} image ${index + 1}`}
-                        width={1000}
-                        height={800}
-                        className="h-auto w-auto max-w-full max-h-[85vh] object-contain rounded-[20px] transition-transform duration-500 hover:scale-[1.02]"
-                        placeholder="blur"
-                        blurDataURL={shimmer}
-                        priority={index === 0}
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </div>
-
-            {/* Carousel Controls */}
-            <CarouselPrevious className="-left-20" />
-            <CarouselNext className="-right-20" />
-          </Carousel>
+        <div className="w-full max-w-5xl relative sm:mt-0 md:mt-12 select-none">
+          
+          <div className="px-12 md:px-24 w-full">
+            <Carousel opts={{ align: "start", loop: true }} className="w-full relative">
+              <div className="rounded-[20px] overflow-hidden relative shadow-lg shadow-black/40">
+                <CarouselContent>
+                  {allImages.map((photoUrl, index) => (
+                    <CarouselItem
+                      key={`gallery-${index}`}
+                      className="flex justify-center items-center"
+                    >
+                      <div className="relative inline-block rounded-[20px] overflow-hidden">
+                        <Image
+                          src={
+                            photoUrl && photoUrl.length > 0
+                              ? photoUrl
+                              : "/projects/default_group_bg.jpg"
+                          }
+                          alt={`${groupName} image ${index + 1}`}
+                          width={1000}
+                          height={800}
+                          className="h-auto w-auto max-w-full max-h-[85vh] object-contain rounded-[20px] transition-transform duration-500 hover:scale-[1.02]"
+                          placeholder="blur"
+                          blurDataURL={shimmer}
+                          priority={index === 0}
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </div>
+              <CarouselPrevious className="left-2 md:-left-16" />
+              <CarouselNext className="right-2 md:-right-16" />
+            </Carousel>
+          </div>
         </div>
       ) : (
         <p className="text-white/70 text-lg mt-10 mb-20 font-avolta">
@@ -91,9 +93,6 @@ export default function GroupGallery({ details }: GroupGalleryProps) {
         }}
       >
       </h2>
-      <div className="w-full max-w-6xl mx-auto border-t border-white mt-6"></div>
-
-      
     </div>
   );
 }

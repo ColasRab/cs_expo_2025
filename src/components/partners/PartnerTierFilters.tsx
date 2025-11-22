@@ -37,7 +37,7 @@ export default function PartnerTierFilters({ onFilterChange }: PartnerTierFilter
                   key={index}
                   onClick={() => handleTierClick(index, tier)}
                   className={`
-                    min-w-[160px] px-4 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap
+                    min-w-[160px] px-4 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap cursor-pointer
                     ${isActive
                       ? 'bg-transparent text-[#ff00dc] border border-[#ff00dc]'
                       : 'text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc]'
@@ -61,7 +61,7 @@ export default function PartnerTierFilters({ onFilterChange }: PartnerTierFilter
               key={index}
               onClick={() => handleTierClick(index, tier)}
               className={`
-                px-2 font-helvetica font-bold h-[35px] text-xs rounded-[8px] transition-all whitespace-nowrap
+                px-2 font-helvetica font-bold h-[35px] text-xs rounded-[8px] transition-all whitespace-wrap
                 ${isActive
                   ? 'bg-transparent text-[#ff00dc] border border-[#ff00dc]'
                   : 'text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc]'

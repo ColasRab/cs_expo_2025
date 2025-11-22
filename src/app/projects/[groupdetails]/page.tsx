@@ -39,8 +39,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </div>
 
       {/* 🔹 Content section */}
-      <div className="bg-[#0F0019]">
-        {/* Project Info Section */}
+      <div className="mt-30 sm:mt-0 bg-[#0F0019]">
         <ProjectInfo
           thesisTitle={project.thesisTitle}
           poster={project.poster}

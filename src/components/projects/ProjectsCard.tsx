@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from 'next/image';
 
 type ProjectsCardProps = {
   appTitle: string;
@@ -23,11 +23,10 @@ export default function ProjectsCard({
   slug,
 }: ProjectsCardProps) {
   return (
-    <div className="w-full flex flex-col bg-[#FF37E31A] rounded-[16px] border-[#A2108D] border-[1px] overflow-hidden shadow-lg relative px-4 py-4">
-      <Link href={`/projects/${slug}`} className="block w-full">
-        <div className="relative group cursor-pointer rounded-[16px] overflow-hidden shadow-lg">
-          {/* Poster Image — use Next/Image instead of backgroundImage */}
-          <div className="relative w-full aspect-[420/594] overflow-hidden rounded-[16px]">
+    <Link href={`/projects/${slug}`} className="block w-full max-w-[400px]">
+      <div className="relative group cursor-pointer h-full">
+        <div className="project-card-bg p-4 w-full h-full flex flex-col transition-all duration-300 ease-in-out">
+          <div className="relative w-full aspect-[420/594] overflow-hidden rounded-[16px] select-none">
             <Image
               src={poster || "/projects/default_poster.jpg"}
               alt={`${appTitle} poster`}
@@ -40,88 +39,84 @@ export default function ProjectsCard({
               loading="lazy"
             />
           </div>
+          <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[24px] border border-[#A2108D]"></div>
 
-          {/* App & Thesis Titles */}
-          <div className="mt-3 p-3 text-justify text-white">
-            <h3
-              className="font-avolta text-[#FF37E3] font-normal md:text-xl text-xs leading-[25px] tracking-[0.1em]"
-              style={{
-                filter: "drop-shadow(0px 0px 6px rgba(255,55,227,0.8))",
-              }}
-            >
+          {/* Text content */}
+          <div className="flex flex-col flex-grow">
+            <h3 className="neon-text-magenta-hover-fade text-2xl mb-2 mt-2 hover-fade">
               {appTitle}
             </h3>
-            <p className="text-body-white-base text-xs line-clamp-2">
+            <p className="text-body-white-base group-hover:opacity-40 transition-all duration-300">
               {thesisTitle}
             </p>
           </div>
+        </div>
 
-          {/* Hover Overlay */}
-          <div className="absolute inset-0 bg-[rgba(39,4,34,0.9)] p-6 flex flex-col justify-start items-start text-left text-white opacity-0 group-hover:opacity-100 transition-all duration-300 overflow-y-auto z-10">
-            <div className="w-full">
-              <p
-                className="font-avolta text-[#FF37E3] font-normal md:text-2xl text-2xl leading-[25px]"
+        {/* Hover overlay */}
+        <div className="project-card-overlay p-8 flex flex-col justify-start items-start text-left text-white">
+          <div className="w-full">
+            {/* App Name */}
+            <p
+              className="neon-text-pink text-2xl"
+              style={{
+                "--webkit-stroke-color": "white",
+                "--webkit-stroke-width": "0.1px"
+              } as React.CSSProperties}
+            >
+              {appTitle}
+            </p>
+
+            {/* Thesis Title */}
+            <p className="text-body-white-base mb-4">{thesisTitle}</p>
+
+            {/* Group Name */}
+            <div className="mb-4">
+              <h4 className="neon-text-pink text-xl"
                 style={{
-                  filter: "drop-shadow(0px 0px 6px rgba(255,55,227,0.8))",
-                }}
-              >
-                {appTitle}
-              </p>
+                  "--webkit-stroke-color": "white",
+                  "--webkit-stroke-width": "0.1px"
+                } as React.CSSProperties}>Group Name</h4>
+              <p className="text-body-white">{groupName}</p>
+            </div>
 
-              <p className="font-extrabold text-body-white-base mb-4 text-xl">
-                {thesisTitle}
-              </p>
-
-              {/* Members */}
-              <div className="mb-3">
-                <h4
-                  className="text-[#FF37E3] font-helvetica-black text-lg"
-                  style={{
-                    filter: "drop-shadow(0px 0px 1px rgba(255,55,227,0.8))",
-                  }}
-                >
-                  Members:
-                </h4>
-                <ul className="list-disc list-inside text-body-white font-helvetica text-sm space-y-1 marker:text-[#FF37E3]">
-                  {members.map((member) => (
-                    <li key={member}>{member}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Mentor */}
-              <div className="mb-3">
-                <h4
-                  className="text-[#FF37E3] font-helvetica-black text-lg"
-                  style={{
-                    filter: "drop-shadow(0px 0px 1px rgba(255,55,227,0.8))",
-                  }}
-                >
-                  Mentor:
-                </h4>
-                <p className="text-body-white text-sm">{mentor}</p>
-              </div>
-
-              {/* Category */}
-              <div>
-                <h4
-                  className="text-[#FF37E3] font-helvetica-black text-lg"
-                  style={{
-                    filter: "drop-shadow(0px 0px 1px rgba(255,55,227,0.8))",
-                  }}
-                >
-                  Topics
-                </h4>
-                {category.map((cat) => (
-                  <p key={cat} className="text-body-white text-sm">
-                    {cat}
-                  </p>
+            {/* Members List */}
+            <div className="mb-4">
+              <h4 className="neon-text-pink text-xl"
+                style={{
+                  "--webkit-stroke-color": "white",
+                  "--webkit-stroke-width": "0.1px"
+                } as React.CSSProperties}>Members</h4>
+              <ul className="text-body-white">
+                {members.map((member) => (
+                  <li key={member}>{member}</li>
                 ))}
-              </div>
+              </ul>
+            </div>
+
+            {/* Mentor */}
+            <div className="mb-4">
+              <h4 className="neon-text-pink text-xl"
+                style={{
+                  "--webkit-stroke-color": "white",
+                  "--webkit-stroke-width": "0.1px"
+                } as React.CSSProperties}>Mentor</h4>
+              <p className="text-body-white">{mentor}</p>
+            </div>
+
+            {/* Category List */}
+            <div>
+              <h4 className="neon-text-pink text-xl"
+                style={{
+                  "--webkit-stroke-color": "white",
+                  "--webkit-stroke-width": "0.1px"
+                } as React.CSSProperties}>Topics</h4>
+              {category.map((cat) => (
+                <p key={cat} className="text-body-white">{cat}</p>
+              ))}
             </div>
           </div>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
