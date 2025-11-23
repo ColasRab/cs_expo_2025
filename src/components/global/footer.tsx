@@ -13,10 +13,9 @@ export default function Footer() {
             <div>
               <h3 className="font-bold text-base sm:text-lg mb-2">CS Expo</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Schedule</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Panelists</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
+                <li><a href="/cs-expo" className="hover:text-[#FF33E1] transition-colors">About</a></li>
+                <li><a href="/cs-expo" className="hover:text-[#FF33E1] transition-colors">Panelists</a></li>
+                <li><a href="/cs-expo" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
               </ul>
             </div>
 
@@ -24,9 +23,9 @@ export default function Footer() {
             <div>
               <h3 className="font-bold text-base sm:text-lg mb-2">Dev Day</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Schedule</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
+                <li><a href="/dev-day" className="hover:text-[#FF33E1] transition-colors">About</a></li>
+                <li><a href="/dev-day" className="hover:text-[#FF33E1] transition-colors">Schedule</a></li>
+                <li><a href="/dev-day" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
               </ul>
             </div>
 
@@ -34,8 +33,8 @@ export default function Footer() {
             <div>
               <h3 className="font-bold text-base sm:text-lg mb-2">Projects</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Collection</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Hall of Fame</a></li>
+                <li><a href="/projects" className="hover:text-[#FF33E1] transition-colors">Collection</a></li>
+                <li><a href="/hall-of-fame" className="hover:text-[#FF33E1] transition-colors">Hall of Fame</a></li>
               </ul>
             </div>
 
@@ -43,9 +42,9 @@ export default function Footer() {
             <div className="col-span-2 sm:col-span-1">
               <h3 className="font-bold text-base sm:text-lg mb-2">Partners & Sponsors</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Minor Partners</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Major Partners</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Community Development Partners</a></li>
+                <li><a href="/partners" className="hover:text-[#FF33E1] transition-colors">Minor Partners</a></li>
+                <li><a href="/partners" className="hover:text-[#FF33E1] transition-colors">Major Partners</a></li>
+                <li><a href="/partners" className="hover:text-[#FF33E1] transition-colors">Community Development Partners</a></li>
               </ul>
             </div>
 
@@ -53,9 +52,9 @@ export default function Footer() {
             <div>
               <h3 className="font-bold text-base sm:text-lg mb-2 invisible">Tiers</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Silver Partners</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Gold Partners</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Diamond Partners</a></li>
+                <li><a href="/partners" className="hover:text-[#FF33E1] transition-colors">Silver Partners</a></li>
+                <li><a href="/partners" className="hover:text-[#FF33E1] transition-colors">Gold Partners</a></li>
+                <li><a href="/partners" className="hover:text-[#FF33E1] transition-colors">Diamond Partners</a></li>
               </ul>
             </div>
 
@@ -63,10 +62,10 @@ export default function Footer() {
             <div>
               <h3 className="font-bold text-base sm:text-lg mb-2">About</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">CS Expo 2025</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Teams</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Committees</a></li>
-                <li><a href="#" className="hover:text-[#FF33E1] transition-colors">Faculty</a></li>
+                <li><a href="/about" className="hover:text-[#FF33E1] transition-colors">CS Expo 2025</a></li>
+                <li><a href="/about" className="hover:text-[#FF33E1] transition-colors">Teams</a></li>
+                <li><a href="/about" className="hover:text-[#FF33E1] transition-colors">Committees</a></li>
+                <li><a href="/about" className="hover:text-[#FF33E1] transition-colors">Faculty</a></li>
               </ul>
             </div>
           </div>

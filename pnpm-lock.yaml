@@ -69,7 +69,7 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
       three:
-        specifier: ^0.181.0
+        specifier: ^0.181.1
         version: 0.181.1
     devDependencies:
       '@tailwindcss/postcss':

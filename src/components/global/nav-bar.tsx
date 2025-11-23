@@ -161,13 +161,19 @@ export default function Navbar() {
           >
             About
           </Link>
+          <Link
+            href="/gallery"
+            className="px-4 md:px-6 py-2 text-sm md:text-base hover:text-[#FF33E1] transition-colors"
+          >
+            Gallery
+          </Link>
           <Link 
-            href="https://bit.ly/CE25RegistrationForm"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/hall-of-fame"
+            //target="_blank"
+            //rel="noopener noreferrer"
             className="px-4 md:px-6 py-2 text-sm md:text-base bg-[#a0178e] text-white rounded-full hover:bg-[#FF00DC] hover:text-[#FF33E1] transition-colors font-semibold"
           >
-            Register Now
+            Hall of Fame
           </Link>
         </div>
 
