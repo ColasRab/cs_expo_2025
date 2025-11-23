@@ -13,9 +13,9 @@ export default function Footer() {
             <div>
               <h3 className="font-bold text-base sm:text-lg mb-2">CS Expo</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
-                <li><a href="/cs-expo" className="hover:text-[#FF33E1] transition-colors">About</a></li>
-                <li><a href="/cs-expo" className="hover:text-[#FF33E1] transition-colors">Panelists</a></li>
-                <li><a href="/cs-expo" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
+                <li><a href="/expo" className="hover:text-[#FF33E1] transition-colors">About</a></li>
+                <li><a href="/expo" className="hover:text-[#FF33E1] transition-colors">Panelists</a></li>
+                <li><a href="/expo" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
               </ul>
             </div>
 
@@ -23,9 +23,9 @@ export default function Footer() {
             <div>
               <h3 className="font-bold text-base sm:text-lg mb-2">Dev Day</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
-                <li><a href="/dev-day" className="hover:text-[#FF33E1] transition-colors">About</a></li>
-                <li><a href="/dev-day" className="hover:text-[#FF33E1] transition-colors">Schedule</a></li>
-                <li><a href="/dev-day" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
+                <li><a href="/devday" className="hover:text-[#FF33E1] transition-colors">About</a></li>
+                <li><a href="/devday" className="hover:text-[#FF33E1] transition-colors">Schedule</a></li>
+                <li><a href="/devday" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
               </ul>
             </div>
 
