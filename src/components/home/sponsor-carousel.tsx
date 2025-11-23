@@ -3,13 +3,13 @@
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import { useEffect, useState } from "react";
-// import { createClient } from "@/lib/supabase/client";
+import { createClient } from "@/lib/supabase/client";
 
 export default function SponsorCarousel({ scale }: { scale: number }) {
   console.log("SponsorCarousel scale prop:", scale);
   const [logos, setLogos] = useState<string[]>([]);
   const [imageErrors, setImageErrors] = useState<Set<number>>(new Set());
-  // const supabase = createClient();
+  const supabase = createClient();
 
   const defaultLogos = [
     "https://via.placeholder.com/300x125/e2e8f0/64748b?text=Logo+1",
@@ -28,30 +28,30 @@ export default function SponsorCarousel({ scale }: { scale: number }) {
     [AutoScroll({ playOnInit: true, speed: 1.2, stopOnInteraction: false })]
   );
 
-  // useEffect(() => {
-  //   const fetchLogos = async () => {
-  //     const { data, error } = await supabase.storage
-  //       .from("partners")
-  //       .list("", { limit: 100 });
+ useEffect(() => {
+   const fetchLogos = async () => {
+     const { data, error } = await supabase.storage
+       .from("partners")
+       .list("", { limit: 100 });
 
-  //     if (error) {
-  //       console.error("Error fetching logos:", error);
-  //       setLogos(defaultLogos);
-  //       return;
-  //     }
+     if (error) {
+       console.error("Error fetching logos:", error);
+       setLogos(defaultLogos);
+       return;
+     }
 
-  //     const urls = data
-  //       .filter((file) => file.name.match(/\.(png|jpg|jpeg|svg|webp)$/i))
-  //       .map(
-  //         (file) =>
-  //           supabase.storage.from("partners").getPublicUrl(file.name).data.publicUrl
-  //       );
+     const urls = data
+       .filter((file) => file.name.match(/\.(png|jpg|jpeg|svg|webp)$/i))
+       .map(
+         (file) =>
+           supabase.storage.from("partners").getPublicUrl(file.name).data.publicUrl
+       );
 
-  //     setLogos(urls.length > 0 ? urls : defaultLogos);
-  //   };
+     setLogos(urls.length > 0 ? urls : defaultLogos);
+   };
 
-  //   fetchLogos();
-  // }, [supabase]);
+   fetchLogos();
+ }, [supabase]);
 
   const handleImageError = (index: number) => {
     setImageErrors((prev) => new Set(prev).add(index));

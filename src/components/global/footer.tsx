@@ -14,6 +14,7 @@ export default function Footer() {
               <h3 className="font-bold text-base sm:text-lg mb-2">CS Expo</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
                 <li><a href="/expo" className="hover:text-[#FF33E1] transition-colors">About</a></li>
+                <li><a href="/expo" className="hover:text-[#FF33E1] transition-colors">Schedule</a></li>
                 <li><a href="/expo" className="hover:text-[#FF33E1] transition-colors">Panelists</a></li>
                 <li><a href="/expo" className="hover:text-[#FF33E1] transition-colors">Speakers</a></li>
               </ul>
@@ -34,7 +35,7 @@ export default function Footer() {
               <h3 className="font-bold text-base sm:text-lg mb-2">Projects</h3>
               <ul className="text-sm sm:text-base space-y-1.5">
                 <li><a href="/projects" className="hover:text-[#FF33E1] transition-colors">Collection</a></li>
-                <li><a href="/hall-of-fame" className="hover:text-[#FF33E1] transition-colors">Hall of Fame</a></li>
+                <li><a href="/projects" className="hover:text-[#FF33E1] transition-colors">Hall of Fame</a></li>
               </ul>
             </div>
 
@@ -77,7 +78,7 @@ export default function Footer() {
             alt="CS Expo Logo"
             width={200}
             height={200}
-            className="object-contain w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-[300px] lg:h-[300px]"
+            className="object-contain w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-[200px] lg:h-[200px]"
           />
           </div>
         </div>

@@ -80,19 +80,18 @@ export default function Home() {
       </main>
       <div className="bg-[#0F0019]">
         <Hero
-          title="CS EXPO"
-          description="A two-day event held on November 10-11, 2025 where students showcase their projects to faculty and industry experts, with awards for top innovations. Talks by tech leaders will explore current trends and insights."
-          variant="expo"
-          textDirection="horizontal-right"
-        />
-        <Hero
           title="Dev Day"
-          description="Following the last day of CS Expo 2025, Dev Day brings together industry experts to share insights on staying current with tech skills and innovation in a fast-evolving field."
+          description="Kicking off as the prelude to CS Expo 2025, Dev Day brings forth a collection of industry experts as they share insights on keeping up with the current tech trends and innovations in a fast-evolving field. This day also brings a meaningful discussion on how academe, industry, and government collaborate within the field of tech."
           variant="devday"
           textDirection="horizontal-left"
         />
+        <Hero
+          title="CS EXPO"
+          description="A two-day event held on November 13 and 14, 2025 at Far Eastern University - Institute of Technology, where students showcase their projects to faculty and industry experts, awarding those who displayed top innovations and geniuses. This event also features contemporary talks from tech leaders, exploring relevant trends and insights."
+          variant="expo"
+          textDirection="horizontal-right"
+        />
       </div>
-
       <Footer />
     </div>
   )
