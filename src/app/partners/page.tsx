@@ -19,7 +19,7 @@ function PartnersPage() {
             {/* Hero Component */}
             <ProjectsHero
                 pageTitle="OUR PARTNERS"
-                pageDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim."
+                pageDesc="Those who helped CS Expo 2025 made the event possible through their support, collaboration, and commitment to showcasing innovation, unlocking the full potential of the event."
             />
 
             <div className="bg-gradient-to-b from-[#0D0D0D] from-[2%] to-[#0F0019] to-[12%] pb-16">

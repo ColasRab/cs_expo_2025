@@ -5,11 +5,8 @@ import PartnerCard from './PartnerCard';
 interface Partner {
   name: string;
   logo: string;
-  facebook?: string;
-  instagram?: string;
-  website?: string;
+  link?: string;
   tier: string;
-  twitter?: string;
 }
 
 interface PartnersGridProps {
@@ -30,10 +27,7 @@ export default function PartnersGrid({ partners, selectedTier }: PartnersGridPro
             key={index}
             name={partner.name}
             logo={partner.logo}
-            facebook={partner.facebook}
-            instagram={partner.instagram}
-            twitter={partner.twitter}
-            website={partner.website}
+            link={partner.link}
           />
         ))}
       </div>

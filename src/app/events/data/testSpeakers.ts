@@ -2,33 +2,45 @@
 
 export const testSpeakers = [
   {
-    name: "DR. SARAH CHEN",
-    title: "Chief AI Research Scientist",
-    bio: "Leading expert in artificial intelligence and machine learning with over 15 years of experience. Published over 100 research papers and developed cutting-edge AI systems used by Fortune 500 companies.",
-    image: "/speakers/picture-placeholder.jpg"
+    name: "Ms. Deirdre Conde",
+    title: "Chief Operating Officer, Eskwelabs",
+    bio: "A trailblazer in education technology and social impact innovation. With over a decade of experience as COO and Data Science Fellow at Eskwelabs, she leads with expertise in product management, operations, and strategy—driving inclusive, tech-powered solutions.",
+    image: "/speakers/deirdre.jpg"
   },
   {
-    name: "MR. JAMES RODRIGUEZ",
-    title: "Senior Full-Stack Developer",
-    bio: "Passionate software engineer specializing in web technologies and cloud architecture. Built scalable applications serving millions of users. Active open-source contributor and tech community leader.",
-    image: "/speakers/picture-placeholder.jpg"
+    name: "Mr. Paul Sears",
+    title: "Founder and CEO, CloudSensei",
+    bio: "A visionary tech leader shaping the future of innovation in the Philippines. With over 30 years of expertise across ICT, OT, cloud, and GenAI, he empowers organizations and bridges the gap between tech graduates and the industry.",
+    image: "/speakers/sears.png"
   },
   {
-    name: "MS. AISHA PATEL",
-    title: "Cybersecurity Expert",
-    bio: "Renowned cybersecurity professional with expertise in ethical hacking and network security. Helped organizations protect against advanced cyber threats. Frequent speaker at international security conferences.",
-    image: "/speakers/picture-placeholder.jpg"
+    name: "Mr. Sermil Matoto",
+    title: "Chief Engineer, Kollab",
+    bio: "A modern engineering leader specializing in modern architecture, serverless development, and DevOps. He leverages secure cloud solutions and digital transformation to solve complex challenges and deliver meaningful impact.",
+    image: "/speakers/sermil.jpg"
   },
   {
-    name: "PROF. MICHAEL ANDERSON",
-    title: "Computer Science Professor",
-    bio: "Award-winning educator and researcher in data science and algorithms. Teaching the next generation of computer scientists for over 20 years. Author of several acclaimed textbooks.",
-    image: "/speakers/picture-placeholder.jpg"
+    name: "Mr. Mark Jeremy Narag",
+    title: "Senior Data Science Consultant, Z-Lift Solutions Inc.",
+    bio: "A full-time Physics instructor and PhD student at UP Diliman with extensive experience in AI and image processing. He develops custom models backed by strong expertise in data handling and analysis.",
+    image: "/speakers/narag.png"
   },
   {
-    name: "MS. ELENA GARCIA",
-    title: "UX/UI Design Lead",
-    bio: "Creative designer transforming complex problems into elegant user experiences. Led design teams at multiple tech startups. Advocate for accessibility and inclusive design practices.",
-    image: "/speakers/picture-placeholder.jpg"
+    name: "Academia Sector: Mr.Justine Jude C. Pura",
+    title: "Assistant Professor, FEU Tech — Computer Science Department",
+    bio: "An educator and leader with over eight years of experience in academia and government, championing innovative teaching at FEU Tech. He is committed to collaborative, purpose-driven work that empowers communities and future tech leaders.",
+    image: "/speakers/pura.png"
+  },
+  {
+    name: "Industry Sector: Mr.Edwin Concepcion",
+    title: "Country Manager, Straits Interactive Pte Ltd",
+    bio: "A trusted data protection expert who empowers organizations to seamlessly embed privacy-by-design and by-default into their systems, strengthening cultures of responsible data stewardship.",
+    image: "/speakers/edwin.png"
+  },
+  {
+    name: "Government Sector: Ms.Jennifer Queddeng",
+    title: "Senior Science Research Specialist & Planning Officer, DOST-NCR",
+    bio: "A distinguished science and technology leader who drives impactful research and strategic innovation initiatives that strengthen communities and support nation-building.",
+    image: "/speakers/queddeng.png"
   }
 ];

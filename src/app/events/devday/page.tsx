@@ -77,35 +77,30 @@ function DevDayPage() {
           devDayInfo={{
             title: "Dev Day",
             subtitle: "November 12, 2025  |  9:00 AM - 5:00 PM",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus."
+            description: "The start of this 3-day journey. Dev Day takes you on a ride as you get insights into the current relevant technologies, as well as insights you'll need to keep up in the future of this dynamically evolving field!"
           }}
           staticSections={[
             {
               title: "Keynote Talk",
-              subtitle: "Digital Transformation in the Philippines: Opportunities and Challenges",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus."
+              subtitle: "Shaping Yourself for Today’s Industry and Tomorrow’s Innovation",
+              description: "Ms. Deirdre Conde discusses how you can prepare yourself for today’s industry demands and future technology. Teaching how to adapt and thrive in a fast-evolving tech landscape."
             },
             {
               title: "Panel Discussion",
-              subtitle: "Digital Transformation in the Philippines: Opportunities and Challenges",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus."
+              subtitle: "Driving Technology Forward Through Cross-Sector Collaboration in Academia, Industry, and Government.",
+              description: "Mr. Justine Jude C. Pura, Mr. Edwin Concepcion, and Ms. Jennifer Queddeng explores how the fields of academia, industry, and government can work together to move the ever-evolving field of tech and its innovators forward."
             }
           ]}
           carouselSections={[
             {
               title: "Lightning Talk 1",
-              subtitle: "Automating Processes with No-Code Solutions on Industry Workflows",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus."
+              subtitle: "From Code to Cloud with Containers and CI/CD Workflows",
+              description: "Mr. Sermil Matoto explains how developers can streamline software development with the use of containers and relevant modern pipelines."
             },
             {
               title: "Lightning Talk 2",
-              subtitle: "Building Scalable Applications with Modern Architecture",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus."
-            },
-            {
-              title: "Lightning Talk 3",
-              subtitle: "Data-Driven Decision Making in Software Development",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus."
+              subtitle: "Data and AI for Social Impact and Sustainability",
+              description: "Mr. Mark Jeremy Narag highlights the power of data and how it can provide meaningful and sustainable solutions, driving social impact."
             }
           ]}
         />
