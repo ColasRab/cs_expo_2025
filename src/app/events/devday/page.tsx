@@ -67,7 +67,7 @@ function DevDayPage() {
         {/* Hero Component */}
         <Hero
           title='DEV DAY'
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim."
+          description="Kicking off as the prelude to CS Expo 2025, Dev Day brings forth a collection of industry experts as they share insights on keeping up with the current tech trends and innovations in a fast-evolving field. This day also brings a meaningful discussion on how academe, industry, and government collaborate within the field of tech."
           variant="devday"
         />
 

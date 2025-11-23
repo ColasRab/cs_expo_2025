@@ -99,11 +99,10 @@ function EventsPage() {
                     filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                   }}
                 >
-                  Digital Transformation in the Philippines
+                  @Rewired for Reality: Lessons in Adulthood and the World After College
                 </p>
                 <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue felis sapien,
-                  eu finibus ante pretium eget.
+                  Mr. Jericho Menguito shares practical insights on navigating adulthood and transitioning into life and work after college.
                 </p>
               </div>
             </div>
@@ -152,7 +151,7 @@ function EventsPage() {
               </p>
 
               <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
-                Join us on the first day of CS Expo as bright fourth-year students present their innovative theses on Medicine & Health and Natural Language Processing.
+                Check out innovations by students in Natural Language Processing and Healthcare.
               </p>
 
               <div className="space-y-4 text-right">
@@ -170,11 +169,10 @@ function EventsPage() {
                     filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                   }}
                 >
-                  Ethics in Emerging Technologies: Where Should We Draw the Line?
+                  Digital Transformation in the Philippines: Opportunities and Challenges
                 </p>
                 <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis
-                  quis massa sit amet.
+                  Mr. Paul Sears explores the opportunities and challenges in shaping the country’s move toward digital transformation.
                 </p>
               </div>
             </div>
