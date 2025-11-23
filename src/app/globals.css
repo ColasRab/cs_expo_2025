@@ -310,7 +310,6 @@ html, body {
     @apply text-[#FF37E3] font-avolta tracking-widest;
 
     --webkit-stroke-width: 0.5px;
-    --webkit-stroke-color: black;
     text-shadow: 0 0 2px rgba(255, 0, 220, 0.7), 0 0 5px rgba(255, 0, 220, 0.5);
     -webkit-text-stroke: var(--webkit-stroke-width) var(--webkit-stroke-color);
   }
@@ -319,13 +318,11 @@ html, body {
   .neon-text-magenta {
     @apply text-[#FF37E3] font-avolta tracking-widest;
     text-shadow: 0 0 5px rgba(255, 0, 220, 0.7), 0 0 10px rgba(255, 0, 220, 0.5);
-    -webkit-text-stroke: 0.5px black;
   }
 
   .neon-text-magenta-hover-fade {
     @apply text-[#FF37E3] font-avolta tracking-widest;
     text-shadow: 0 0 5px rgba(255, 0, 220, 0.7), 0 0 10px rgba(255, 0, 220, 0.5);
-    -webkit-text-stroke: 0.5px black;
     transition: all 0.3s;
   }
 
@@ -354,7 +351,7 @@ html, body {
   }
 
   .hover-fade {
-    @apply group-hover:opacity-40 group-hover:text-white transition-all duration-300;
+    @apply group-hover:opacity-20 group-hover:text-white transition-all duration-300;
   }
 
 
