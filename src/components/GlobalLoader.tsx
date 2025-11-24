@@ -1,64 +1,42 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useEffect, useState } from "react";
 
 export default function GlobalLoader() {
-  const pathname = usePathname();
-  const [isMounted, setIsMounted] = useState(false); // ✅ fix hydration mismatch
-  const [isLoading, setIsLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true); // run only on client
+    const timer = setTimeout(() => setFade(true), 4500); // start fade
+    const remove = setTimeout(() => setLoading(false), 5000); // fully remove
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(remove);
+    };
   }, []);
 
-  useEffect(() => {
-    if (!isMounted) return;
-
-    // ✅ Trigger loader when navigating
-    setIsLoading(true);
-
-    // ✅ Wait until all images are loaded
-    const handlePageLoad = () => {
-      setTimeout(() => setIsLoading(false), 500); // small fade-out delay
-    };
-
-    if (document.readyState === 'complete') {
-      handlePageLoad();
-    } else {
-      window.addEventListener('load', handlePageLoad);
-      return () => window.removeEventListener('load', handlePageLoad);
-    }
-  }, [pathname, isMounted]);
-
-  // 🧩 Avoid hydration mismatch: don't render dynamic content until mounted
-  if (!isMounted) return null;
+  if (!loading) return null;
 
   return (
-    <AnimatePresence mode="wait">
-      {isLoading && (
-        <motion.div
-          key="page-loader"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: 'easeInOut' }}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-md"
-        >
-          {/* 🔄 Spinner */}
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1, rotate: 360 }}
-            transition={{
-              repeat: Infinity,
-              duration: 1.2,
-              ease: 'easeInOut',
-            }}
-            className="w-12 h-12 rounded-full border-4 border-white border-t-transparent"
-          />
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <div
+      className={`fixed inset-0 z-[9999] flex items-center justify-center transition-opacity duration-500
+      ${fade ? "opacity-0" : "opacity-100"}`}
+      style={{
+        backgroundColor: "#0F0019",
+      }}
+    >
+      <div className="relative flex flex-col items-center">
+        {/* LOGO */}
+        <img
+          src="/logo/expo_logo.png"
+          alt="CS Expo Loader"
+          className="w-72 h-72 object-contain spin-3d neon-glow"
+        />
+      </div>
+
+      {/* Extra glow spread */}
+      <div className="absolute w-[300px] h-[300px] bg-purple-500 blur-[80px] opacity-30 rounded-full"></div>
+    </div>
   );
 }
