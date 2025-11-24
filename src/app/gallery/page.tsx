@@ -4,9 +4,12 @@ import { GalleryColumn } from "@/components/gallery/GalleryColumn"
 import Footer from "@/components/global/footer"
 import { ProjectsHero } from "../hall-of-fame/ui/ProjectsHero"
 import Navbar from "@/components/global/nav-bar"
+import GlobalLoader from "@/components/GlobalLoader"
 
 export default function Gallery() {
   return (
+    <>
+    <GlobalLoader />
     <div className="flex min-h-screen flex-col bg-[#0D0D0D] select-none">
       <header className="bg-transparent">
         <Navbar />
@@ -19,5 +22,6 @@ export default function Gallery() {
       <Footer />
       <div />
     </div>
+    </>
   )
 }

@@ -32,7 +32,7 @@ export function BestThesisMentor() {
       {/* Content Container */}
       <div className="relative z-10 flex flex-col-reverse gap-6 pb-8 sm:gap-8 lg:flex-row lg:gap-0 lg:pb-0">
         {/* Text Content */}
-        <div className="flex w-full flex-col justify-center px-6 pb-6 text-white sm:px-8 sm:pb-8 lg:order-1 lg:w-1/2 lg:p-16">
+        <div className="flex w-full flex-col justify-center px-6 pb-6 text-white sm:px-8 sm:pb-8 lg:order-1 lg:w-1/2 lg:p-40">
           <div className="w-full max-w-2xl lg:max-w-none">
             <h2
               className="font-avolta mb-3 text-3xl leading-tight text-white uppercase sm:mb-4 sm:text-4xl md:text-5xl lg:mb-6 lg:text-6xl"
@@ -46,9 +46,7 @@ export function BestThesisMentor() {
             <div className="mb-4 h-[2px] w-16 bg-gradient-to-r from-[#8A38F5] via-[#FF37E3] to-transparent sm:mb-6 sm:w-20 lg:mb-8"></div>
 
             <p className="font-helvetica mb-6 text-sm leading-relaxed font-light text-white/90 sm:text-base sm:leading-relaxed md:text-lg lg:mb-8 lg:text-lg lg:leading-[30px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem qui commodi fugit
-              maxime quis natus placeat repellat vero aspernatur, autem impedit reiciendis et
-              inventore incidunt accusamus, dolorem in nisi quaerat!
+              A dedicated educator and tech leader with over eight years of experience in the government and academe combined. With a proven track record of empowering thousands and leading high-impact initiatives, he stands at the pinnacle as the best mentor of CS Expo 2025.
             </p>
           </div>
         </div>
@@ -63,14 +61,17 @@ export function BestThesisMentor() {
               }}
             >
               <Image
-                src={groupsData[30].member_picture.at(0) || "/HOF/placeholder.jpg"} //placeholder
+                src="https://sdeirkuuvtttfxftgpdc.supabase.co/storage/v1/object/public/pics/3/IMG_7291.jpg"
                 alt="Mentor image"
                 fill
                 className="cursor-default object-cover transition-transform duration-300 select-none group-hover:scale-110"
-                quality={100}
+                style={{
+                  objectPosition: "25% 50%", // <-- X% Y%
+                }}
                 priority
                 sizes="(max-width: 640px) 90vw, (max-width: 1024px) 80vw, 50vw"
               />
+
             </div>
           </div>
         </div>

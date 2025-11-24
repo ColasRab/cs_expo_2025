@@ -62,7 +62,6 @@ export function AwardeeCard({
               alt={current.groupName}
               fill
               className="object-cover transition-transform duration-300 select-none group-hover:scale-105"
-              quality={100}
               priority
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
@@ -289,7 +288,6 @@ export function AwardeeCard({
                 alt={current.groupName}
                 fill
                 className="object-cover transition-transform duration-300 select-none group-hover:scale-105"
-                quality={100}
                 priority
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />

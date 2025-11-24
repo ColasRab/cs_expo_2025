@@ -73,7 +73,6 @@ export function BestThesisCategory() {
                         height={1000}
                         width={1000}
                         className="h-auto max-h-[45vh] w-auto max-w-[75vw] cursor-default object-contain transition-transform duration-300 select-none group-hover:scale-110 sm:max-h-[48vh] sm:max-w-[80vw] md:max-h-[52vh] lg:max-h-[70vh] lg:max-w-full"
-                        quality={100}
                         priority
                         sizes="(max-width: 640px) 75vw, (max-width: 1024px) 65vw, 40vw"
                       />

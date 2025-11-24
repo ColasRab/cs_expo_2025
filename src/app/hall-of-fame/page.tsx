@@ -14,7 +14,7 @@ export default function HallOfFamePage() {
 
         <ProjectsHero
           pageTitle="Hall Of Fame"
-          pageDesc="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          pageDesc="The thesis groups and projects that earned their place here represent the pinnacle of brilliance at CS Expo 2025. These standout teams pushed the limits, delivered impactful solutions, and set the bar for future generations of innovators."
         />
       </header>
       {/* gradient transition */}
