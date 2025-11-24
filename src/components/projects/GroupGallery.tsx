@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 type GroupGalleryProps = {
   details: {

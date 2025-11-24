@@ -3,6 +3,7 @@
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback } from 'react';
 import Image from 'next/image';
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 interface ScheduleItem {
   title: string;

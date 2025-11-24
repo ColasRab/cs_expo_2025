@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from 'next/image';
 import PartnerCard from './PartnerCard';
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 interface Partner {
   name: string;

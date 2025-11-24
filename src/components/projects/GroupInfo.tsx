@@ -1,5 +1,6 @@
 import Image from "next/image";
 import InfoPill from "@/components/projects/InfoPill";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 type ProjectInfoProps = {
   poster: string;
