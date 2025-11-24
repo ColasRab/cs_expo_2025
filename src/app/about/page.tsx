@@ -1,14 +1,17 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
 import PixelBlast from '@/components/global/PixelBlast';
 import Navbar from '@/components/global/nav-bar';
 import Footer from '@/components/global/footer';
+import groupsData from '@/data/groups';
+import event_committees from '@/data/committees';
 
 export default function AboutPage() {
   const [currentTeamPage, setCurrentTeamPage] = useState(0);
   const [currentFacultyIndex, setCurrentFacultyIndex] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState('Event Head');
 
   // Data URIs for placeholder images
   const teamPlaceholder = 'data:image/svg+xml;base64,' + btoa(`
@@ -47,21 +50,72 @@ export default function AboutPage() {
     </svg>
   `);
 
-  // Placeholder team members data (4 rows x 4 members)
-  const teamMembers = Array.from({ length: 16 }, (_, i) => ({
-    id: i,
-    name: `Team Member ${i + 1}`,
-    role: 'Position',
-    image: teamPlaceholder
-  }));
+  // Transform groupsData into team members with random group picture
+  const [teamMembers, setTeamMembers] = useState<any[] | null>(null);
 
-  // Placeholder committee members data
-  const committeeMembers = Array.from({ length: 13 }, (_, i) => ({
-    id: i,
-    name: `Committee Member ${i + 1}`,
-    role: 'Committee Position',
-    image: committeePlaceholder
-  }));
+  useEffect(() => {
+    const randomized = groupsData.map((group) => {
+      const randomIndex = Math.floor(Math.random() * group.group_picture_url.length);
+      const randomPicture = group.group_picture_url[randomIndex];
+
+      return {
+        id: group.id,
+        name: group.group_name,
+        role: 'Thesis Group',
+        image: randomPicture,
+      };
+    });
+
+    setTeamMembers(randomized);
+  }, []);
+
+  // Filter committee members based on selected category
+  type CommitteeMember = {
+    id: string;
+    name: string;
+    role: string;
+    image: string;
+    isHead?: boolean;
+  };
+
+  const filteredCommitteeMembers = useMemo<CommitteeMember[]>(() => {
+    const categoryMap: { [key: string]: string[] } = {
+      'Event Head': ['Project Head', 'Externals Head', 'Marketing & Creatives Head','Sponsorships Head', 'Partnerships Head', 'Speakership Head', 'Publicity Head', 'Publications Head', 'Media Head', 'Documentations Head', 'Finance Head', 'Programs Head','Logistics Head', 'Technicals Head', 'Developers Head'],
+      'Externals': ['Externals Head', 'Partnerships Head', 'Partnerships', 'Speakerships', 'Sponsorships Head', 'Sponsorships'],
+      'Partnerships': ['Externals Head', 'Partnerships Head', 'Partnerships'],
+      'Sponsorships': ['Externals Head', 'Sponsorships Head', 'Sponsorships'],
+      'Speakerships': ['Externals Head', 'Speakerships Head', 'Speakerships'],
+      'Publicity': ['Marketing & Creatives Head', 'Publicity Head', 'Publicity'],
+      'Creatives': ['Marketing & Creatives Head', 'Creatives'],
+      'Media': ['Marketing & Creatives Head', 'Media Head', 'Media'],
+      'Publications': ['Marketing & Creatives Head', 'Publications Head', 'Publications'],
+      'Programs': ['Programs Head', 'Programs'],
+      'Technicals': ['Technicals Head', 'Technicals'],
+      'Finance': ['Finance Head', 'Finance'],
+      'Developers': ['Developers Head', 'Developers'],
+      'Documentations': ['Documentations Head', 'Documentations'],
+      'Logistics': ['Logistics Head', 'Logistics']
+    };
+
+    const allowedRoles = categoryMap[selectedCategory] || [];
+
+return event_committees
+  .filter((member: any) => allowedRoles.includes(member.role))
+  .map((member: any): CommitteeMember => ({
+    id: member.name,
+    name: member.name,
+    role: member.role,
+    image: member.picture || committeePlaceholder,
+    isHead: member.isHead
+  }))
+  .sort((a, b) => {
+    // Sort according to role order in categoryMap
+    const roleOrder = allowedRoles;
+
+    return roleOrder.indexOf(a.role) - roleOrder.indexOf(b.role);
+  });
+
+  }, [selectedCategory]);
 
   // Placeholder faculty data
   const facultyMembers = Array.from({ length: 5 }, (_, i) => ({
@@ -72,12 +126,26 @@ export default function AboutPage() {
   }));
 
   const itemsPerPage = 8;
-  const totalTeamPages = Math.ceil(teamMembers.length / itemsPerPage);
+  
+  if (!teamMembers) {
+    return (
+      <div className="relative min-h-screen text-white overflow-hidden">
+        <Navbar />
+        <section className="container mx-auto px-4 pt-32 pb-16 text-center">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold opacity-70">
+            Loading teams…
+          </h1>
+        </section>
+      </div>
+    );
+  }
 
   const displayedTeamMembers = teamMembers.slice(
     currentTeamPage * itemsPerPage,
     (currentTeamPage + 1) * itemsPerPage
   );
+
+  const totalTeamPages = Math.max(1, Math.ceil(teamMembers.length / itemsPerPage));
 
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
@@ -142,13 +210,10 @@ export default function AboutPage() {
               <div className="flex flex-col justify-center order-1 md:order-2">
                 <div className="prose prose-invert max-w-none font-helvetica">
                   <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus.
-                  </p>
-                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus.
+                    CS Expo 2025: Digital Reverie is a celebration of innovation and creativity within FEU Tech. It serves as the primary platform for Computer Science students, from both Software Engineering and Data Science to present their brilliant thesis projects. Here, they can demonstrate their technical prowess and skills, while showcasing the solutions they developed, addressing real-world challenges.
                   </p>
                   <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white mt-3 sm:mt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim neque, lobortis quis massa sit amet, convallis tincidunt enim. Suspendisse congue felis sapien, eu finibus ante pretium eget. Vestibulum aliquam viverra lorem vitae maximus.
+                    This event brings together students, faculty, industry partners, and guests in an immersive experience that highlights the power of young minds in a fast-paced field of technology. This Digital Reverie invites everyone, visionaries and innovations, to further imagine and create solutions that transform the world.
                   </p>
                 </div>
               </div>
@@ -171,7 +236,7 @@ export default function AboutPage() {
               THE VISIONARY TEAMS
             </h1>
             <p className="text-4xl sm:text-sm md:text-base lg:text-4xl text-white font-avolta px-2 drop-shadow-[0_2px_6px_#FFFFFFCC]">
-              43 blablabla, blablabla
+              43 teams that showcased their creativity, innovation, and passion for solving real-world problems.
             </p>
           </div>
 
@@ -275,28 +340,18 @@ export default function AboutPage() {
             </div>
 
             <div className="max-w-6xl mx-auto mb-6 sm:mb-8">
-              <div className="flex flex-wrap justify-center gap-10 mb-4 sm:mb-6 cursor-pointer">
-                {['Event Head', 'Externals', 'Publicity', 'Creatives', 'Media', 'Publications'].map((category) => (
+              <div className="flex flex-wrap justify-center gap-10 mb-4 sm:mb-6">
+                {['Event Head', 'Externals', 'Sponsorships', 'Partnerships', 'Speakership', 'Publicity', 'Creatives', 'Publications', 'Media', 'Programs', 'Technicals', 'Finance', 'Developers', 'Documentations', 'Logistics'].map((category) => (
                   <button
                     key={category}
-                    className="
-          min-w-[120px] px-2 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap
-          text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc] cursor-pointer
-        "
-                  >
-                    {category}
-                  </button>
-                ))}
-              </div>
-
-              <div className="flex flex-wrap justify-center gap-10 ">
-                {['Programs', 'Technicals', 'Finance', 'Developers', 'Documentations', 'Logistics'].map((category) => (
-                  <button
-                    key={category}
-                    className="
-          min-w-[120px] px-2 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap
-          text-white border border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc] cursor-pointer
-        "
+                    onClick={() => setSelectedCategory(category)}
+                    className={`
+                      min-w-[120px] px-2 font-helvetica font-bold h-[35px] text-sm rounded-[8px] transition-all whitespace-nowrap
+                      ${selectedCategory === category 
+                        ? 'bg-[#ff00dc] text-white border-[#ff00dc]' 
+                        : 'text-white border-white hover:bg-[#ff00dc] hover:text-white hover:border-[#ff00dc]'
+                      } border cursor-pointer
+                    `}
                   >
                     {category}
                   </button>
@@ -310,50 +365,69 @@ export default function AboutPage() {
             </div>
 
             {/* Committee Grid */}
+            <div className="flex justify-center">
             <div className="max-w-6xl mx-auto">
-              {/* First row - centered single item */}
-              <div className="flex justify-center mb-6 sm:mb-8">
-                <div className="w-full max-w-[240px] sm:max-w-xs">
-                  <div className="group">
-                    <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-white/10 hover:border-[#FF33E1]/50 transition-all duration-300">
-                      <div className="aspect-[286/348] relative">
-                        <Image
-                          src={committeeMembers[0].image}
-                          alt={committeeMembers[0].name}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="p-2 sm:p-3 md:p-4 text-center bg-black/50">
-                        <h3 className="font-semibold text-xs sm:text-sm md:text-base">{committeeMembers[0].name}</h3>
-                        <p className="text-[10px] sm:text-xs md:text-sm text-[#FF33E1]">{committeeMembers[0].role}</p>
-                      </div>
-                    </div>
-                  </div>
+              {filteredCommitteeMembers.length === 0 ? (
+                <div className="text-center py-12 text-white/60">
+                  <p>No committee members found for this category.</p>
                 </div>
-              </div>
-
-              {/* Remaining rows - 4 columns */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
-                {committeeMembers.slice(1).map((member) => (
-                  <div key={member.id} className="group">
-                    <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-white/10 hover:border-[#FF33E1]/50 transition-all duration-300">
-                      <div className="aspect-[286/348] relative">
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="p-2 sm:p-3 md:p-4 text-center bg-black/50">
-                        <h3 className="font-semibold text-xs sm:text-sm md:text-base">{member.name}</h3>
-                        <p className="text-[10px] sm:text-xs md:text-sm text-[#FF33E1]">{member.role}</p>
+              ) : (
+                <>
+                  {/* Check if there's a head to display first */}
+                  {filteredCommitteeMembers.some(m => m.isHead) && (
+                    <div className="flex justify-center mb-6 sm:mb-8">
+                      <div className="w-full max-w-[240px] sm:max-w-xs">
+                        {filteredCommitteeMembers
+                          .filter(m => m.isHead)
+                          .slice(0, 1)
+                          .map((member) => (
+                            <div key={member.id} className="group">
+                              <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-white/10 hover:border-[#FF33E1]/50 transition-all duration-300">
+                                <div className="aspect-[286/348] relative">
+                                  <Image
+                                    src={member.image}
+                                    alt={member.name}
+                                    fill
+                                    className="object-cover"
+                                  />
+                                </div>
+                                <div className="p-2 sm:p-3 md:p-4 text-center bg-black/50">
+                                  <h3 className="font-semibold text-xs sm:text-sm md:text-base">{member.name}</h3>
+                                  <p className="text-[10px] sm:text-xs md:text-sm text-[#FF33E1]">{member.role}</p>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
                       </div>
                     </div>
+                  )}
+
+                  {/* Remaining members - 4 columns */}
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+                    {filteredCommitteeMembers
+                      .filter(m => !m.isHead || filteredCommitteeMembers.filter(x => x.isHead).indexOf(m) > 0)
+                      .map((member) => (
+                        <div key={member.id} className="group">
+                          <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-white/10 hover:border-[#FF33E1]/50 transition-all duration-300">
+                            <div className="aspect-[286/348] relative">
+                              <Image
+                                src={member.image}
+                                alt={member.name}
+                                fill
+                                className="object-cover"
+                              />
+                            </div>
+                            <div className="p-2 sm:p-3 md:p-4 text-center bg-black/50">
+                              <h3 className="font-semibold text-xs sm:text-sm md:text-base">{member.name}</h3>
+                              <p className="text-[10px] sm:text-xs md:text-sm text-[#FF33E1]">{member.role}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
                   </div>
-                ))}
-              </div>
+                </>
+              )}
+            </div>
             </div>
           </div>
         </section>

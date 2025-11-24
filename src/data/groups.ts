@@ -196,7 +196,8 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Autonomoux/IMG_9565.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Autonomoux/IMG_9599.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Autonomoux/IMG_9637.jpg",
-            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Autonomoux/IMG_9671.jpg"
+            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Autonomoux/IMG_9671.jpg",
+            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/Autonomoux/IMG_9715.JPG"
         ],
         "category": "Agriculture",
         "group_picture_url": [
@@ -746,7 +747,7 @@ const groupsData = [
         "category": "Computer Vision",
         "group_picture_url": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/micromarc2.jpg",
-            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/micromarc1.jpg"
+            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/mircomarc1.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/micromarc-logo.png",
         "members": [
@@ -906,7 +907,7 @@ const groupsData = [
         "member_picture": [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/SudoCodes/IMG_9291.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/SudoCodes/IMG_9325.jpg",
-            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/SudoCodes/IMG_9325.jpg",
+            "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/SudoCodes/IMG_9347.jpg",
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/solo_pictures/SudoCodes/IMG_9350.jpg"
         ],
         "category": "Education",
