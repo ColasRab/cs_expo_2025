@@ -5,7 +5,7 @@ import PartnerCard from './PartnerCard';
 interface Partner {
   name: string;
   logo: string;
-  link?: string;
+  link: string;
   tier: string;
 }
 

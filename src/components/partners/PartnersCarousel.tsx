@@ -13,11 +13,8 @@ import PartnerCard from './PartnerCard';
 interface Partner {
   name: string;
   logo: string;
-  facebook?: string;
-  instagram?: string;
-  website?: string;
+  link: string;
 }
-
 interface PartnersCarouselProps {
   title: string;
   partners: Partner[];
@@ -63,9 +60,7 @@ export default function PartnersCarousel({
                 <PartnerCard 
                   name={partner.name}
                   logo={partner.logo}
-                  facebook={partner.facebook}
-                  instagram={partner.instagram}
-                  website={partner.website}
+                  link={partner.link}
                 />
               </CarouselItem>
             ))}

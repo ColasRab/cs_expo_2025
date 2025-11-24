@@ -286,7 +286,7 @@ export default function Navbar() {
           </div>
 
           <Link 
-            href="#"
+            href="/partners"
             onClick={toggleMenu}
             className="w-full max-w-xs text-center px-8 py-3 text-base hover:text-[#FF33E1] transition-all duration-200"
           >
@@ -299,12 +299,19 @@ export default function Navbar() {
           >
             About
           </Link>
+          <Link
+            href="/gallery"
+            onClick={toggleMenu}
+            className="w-full max-w-xs text-center px-8 py-3 text-base hover:text-[#FF33E1] transition-all duration-200"
+          >
+            Gallery
+          </Link>
           <Link 
-            href="/register"
+            href="/hall-of-fame"
             onClick={toggleMenu}
             className="w-full max-w-xs text-center px-8 py-3 text-base bg-[#a0178e] text-white rounded-full hover:bg-[#FF00DC] hover:text-[#FF33E1] transition-all duration-200 font-semibold mt-2"
           >
-            Register Now
+            Hall of Fame
           </Link>
         </div>
       </div>
