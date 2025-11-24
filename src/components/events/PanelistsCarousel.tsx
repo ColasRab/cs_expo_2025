@@ -99,10 +99,10 @@ function PanelistsCarousel({ panelists, titleColor = '#FF00DC' }: PanelistCarous
           
           {/* Navigation Buttons */}
           <CarouselPrevious className="-left-12 md:-left-16 lg:-left-20 top-1/2 -translate-y-1/2 text-white hover:text-pink-500 bg-transparent border-none hover:bg-transparent">
-            <Image src="/arrow.svg" alt="Previous" width={24} height={24} />
+            <ResponsiveImage src="/arrow.svg" alt="Previous" width={24} height={24} />
           </CarouselPrevious>
           <CarouselNext className="-right-12 md:-right-16 lg:-right-20 top-1/2 -translate-y-1/2 text-white hover:text-pink-500 bg-transparent border-none hover:bg-transparent">
-            <Image src="/arrow.svg" alt="Next" width={24} height={24} className="rotate-180" />
+            <ResponsiveImage src="/arrow.svg" alt="Next" width={24} height={24} className="rotate-180" />
           </CarouselNext>
         </Carousel>
       </div>

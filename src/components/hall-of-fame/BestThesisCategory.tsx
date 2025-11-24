@@ -12,6 +12,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel"
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 import { slugify } from "../../app/hall-of-fame/util/nameToSlug"
 
@@ -67,7 +68,7 @@ export function BestThesisCategory() {
                         boxShadow: "0 0 40px rgba(255,55,227,0.3), 0 0 20px rgba(255,55,227,0.2)",
                       }}
                     >
-                      <Image
+                      <ResponsiveImage
                         src={project.img}
                         alt={project.title}
                         height={1000}

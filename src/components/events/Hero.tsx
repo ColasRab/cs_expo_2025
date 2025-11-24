@@ -69,11 +69,11 @@ export default function Hero({
       // 🔸 Mid Row
       { left: "12%", top: "50%", size: 50, rotate: -3, opacity: 0.78 },
       { left: "28%", top: "52%", size: 55, rotate: 5, opacity: 0.8 },
-      { left: "75%", top: "54%", size: 52, rotate: -2, opacity: 0.78 },
+      { left: "85%", top: "60%", size: 52, rotate: -2, opacity: 0.78 },
       { left: "88%", top: "50%", size: 50, rotate: 4, opacity: 0.75 },
 
       // 🔸 Lower Row
-      { left: "14%", top: "69%", size: 50, rotate: 3, opacity: 0.8 },
+      { left: "14%", top: "65%", size: 50, rotate: 3, opacity: 0.8 },
       { left: "42%", top: "66%", size: 55, rotate: -5, opacity: 0.78 },
       { left: "67%", top: "67%", size: 50, rotate: 4, opacity: 0.8 },
       { left: "88%", top: "69%", size: 48, rotate: -3, opacity: 0.75 },

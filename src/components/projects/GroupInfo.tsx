@@ -25,7 +25,7 @@ export default function ProjectInfo({
       <div className="flex flex-col lg:flex-row gap-8 lg:justify-center items-center lg:items-start">
         {/* LEFT COLUMN — Poster */}
         <div className="w-[85%] sm:w-[70%] md:w-[60%] lg:w-[650px] aspect-[542/768] mt-8 sm:mt-20 md:mt-0 flex justify-center">
-          <Image
+          <ResponsiveImage
             src={
               poster && poster.length > 0
                 ? poster

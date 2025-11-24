@@ -4,7 +4,7 @@
 import * as React from "react"
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react"
 import Image from "next/image"
-
+import ResponsiveImage from "@/components/ResponsiveImage";
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 
@@ -183,7 +183,7 @@ function CarouselPrevious({ className, ...props }: React.ComponentProps<typeof B
       onMouseLeave={() => setIsHovered(false)}
       {...props}
     >
-      <Image
+      <ResponsiveImage
         src={isHovered ? "/projects/left-hovered.svg" : "/projects/left-arrow.svg"}
         alt="Previous"
         width={40}
@@ -217,7 +217,7 @@ function CarouselNext({ className, ...props }: React.ComponentProps<typeof Butto
       onMouseLeave={() => setIsHovered(false)}
       {...props}
     >
-      <Image
+      <ResponsiveImage
         src={isHovered ? "/projects/right-hovered.svg" : "/projects/right-arrow.svg"}
         alt="Next"
         width={40}

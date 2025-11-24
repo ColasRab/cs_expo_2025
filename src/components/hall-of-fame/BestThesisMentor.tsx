@@ -1,5 +1,7 @@
 import Image from "next/image"
 import groupsData from "@/data/groups"
+import ResponsiveImage from "@/components/ResponsiveImage";
+
 export function BestThesisMentor() {
   return (
     <section className="relative flex h-auto w-full flex-col overflow-hidden bg-[#0A0014] lg:h-screen">
@@ -60,7 +62,7 @@ export function BestThesisMentor() {
                 boxShadow: "0 0 40px rgba(138,56,245,0.3), 0 0 20px rgba(255,55,227,0.2)",
               }}
             >
-              <Image
+              <ResponsiveImage
                 src="https://sdeirkuuvtttfxftgpdc.supabase.co/storage/v1/object/public/pics/3/IMG_7291.jpg"
                 alt="Mentor image"
                 fill

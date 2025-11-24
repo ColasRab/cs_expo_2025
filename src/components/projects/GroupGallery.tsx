@@ -53,7 +53,7 @@ export default function GroupGallery({ details }: GroupGalleryProps) {
                       className="flex justify-center items-center"
                     >
                       <div className="relative inline-block rounded-[20px] overflow-hidden">
-                        <Image
+                        <ResponsiveImage
                           src={
                             photoUrl && photoUrl.length > 0
                               ? photoUrl

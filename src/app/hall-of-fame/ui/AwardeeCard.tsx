@@ -5,6 +5,7 @@ import clsx from "clsx"
 import Image from "next/image"
 import { LiaLongArrowAltRightSolid } from "react-icons/lia"
 import { slugify } from "../util/nameToSlug"
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // accepts award parameter of type AwardProps
 export function AwardeeCard({
@@ -57,7 +58,7 @@ export function AwardeeCard({
         >
           {/* Image container */}
           <div className="relative h-[285px] w-full flex-shrink-0 overflow-hidden rounded-[16px]">
-            <Image
+            <ResponsiveImage
               src={current.img}
               alt={current.groupName}
               fill
@@ -283,7 +284,7 @@ export function AwardeeCard({
           >
             {/* Image container */}
             <div className="relative h-[285px] w-full flex-shrink-0 overflow-hidden rounded-[16px]">
-              <Image
+              <ResponsiveImage
                 src={current.img}
                 alt={current.groupName}
                 fill

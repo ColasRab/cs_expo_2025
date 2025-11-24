@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +64,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <div className="flex-shrink-0 transition-all duration-500">
-            <Image
+            <ResponsiveImage
               src="/logo/expo_logo.png"
               alt="CS Expo Logo"
               width={isScrolled ? 90 : 108}
@@ -203,7 +204,7 @@ export default function Navbar() {
         >
           {/* Logo at top of mobile menu */}
           <div className="mb-4">
-            <Image
+            <ResponsiveImage
               src="/logo/expo_logo.png"
               alt="CS Expo Logo"
               width={120}

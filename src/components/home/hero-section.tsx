@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 const HeroSection: React.FC = () => {
     return (
@@ -10,7 +11,7 @@ const HeroSection: React.FC = () => {
 
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center text-center">
                 <div className="relative w-[260px] sm:w-[360px] md:w-[518px]">
-                    <Image
+                    <ResponsiveImage
                         src="/logo/expo_logo.png"
                         alt="Logo"
                         width={518}

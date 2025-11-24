@@ -111,7 +111,7 @@ function DevDayScheduleLayout({ devDayInfo, staticSections, carouselSections = [
                   className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hover:opacity-70 transition-opacity bg-transparent border-none"
                   aria-label="Previous"
                 >
-                  <Image src="/events/arrow.svg" alt="Previous" width={24} height={24} />
+                  <ResponsiveImage src="/events/arrow.svg" alt="Previous" width={24} height={24} />
                 </button>
 
                 <button
@@ -119,7 +119,7 @@ function DevDayScheduleLayout({ devDayInfo, staticSections, carouselSections = [
                   className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hover:opacity-70 transition-opacity bg-transparent border-none"
                   aria-label="Next"
                 >
-                  <Image src="/events/arrow.svg" alt="Next" width={24} height={24} className="rotate-180" />
+                  <ResponsiveImage src="/events/arrow.svg" alt="Next" width={24} height={24} className="rotate-180" />
                 </button>
 
                 {/* Embla Viewport */}

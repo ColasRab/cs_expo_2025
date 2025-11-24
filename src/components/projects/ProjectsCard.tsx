@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from 'next/image';
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 type ProjectsCardProps = {
   appTitle: string;
@@ -27,7 +28,7 @@ export default function ProjectsCard({
       <div className="relative group cursor-pointer h-full">
         <div className="project-card-bg p-4 w-full h-full flex flex-col transition-all duration-300 ease-in-out">
           <div className="relative w-full aspect-[420/594] overflow-hidden rounded-[16px] select-none">
-            <Image
+            <ResponsiveImage
               src={poster || "/projects/default_poster.jpg"}
               alt={`${appTitle} poster`}
               fill
@@ -35,7 +36,6 @@ export default function ProjectsCard({
               className="object-cover transition-transform duration-300 group-hover:scale-105"
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAB..." // 👈 tiny blur placeholder
-              quality={70}
               loading="lazy"
             />
           </div>

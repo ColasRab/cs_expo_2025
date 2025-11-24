@@ -7,6 +7,7 @@ import Navbar from '@/components/global/nav-bar';
 import Footer from '@/components/global/footer';
 import groupsData from '@/data/groups';
 import event_committees from '@/data/committees';
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export default function AboutPage() {
   const [currentTeamPage, setCurrentTeamPage] = useState(0);
@@ -195,13 +196,12 @@ return event_committees
               {/* Poster */}
               <div className="flex justify-center md:justify-end order-2 md:order-1">
                 <div className="relative w-full max-w-sm sm:max-w-md bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl select-none">
-                  <Image
+                  <ResponsiveImage
                     src={"/about/poster.png"}
                     alt="CS Expo 2025 Digital Reverie Poster"
                     width={536}
                     height={714}
                     className="rounded-xl sm:rounded-2xl w-full h-auto"
-                    priority
                   />
                 </div>
               </div>
@@ -262,7 +262,7 @@ return event_committees
                 <div key={member.id} className="group">
                   <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-white/10 hover:border-[#FF33E1]/50 transition-all duration-300">
                     <div className="aspect-[3/4] relative">
-                      <Image
+                      <ResponsiveImage
                         src={member.image}
                         alt={member.name}
                         fill
@@ -384,7 +384,7 @@ return event_committees
                             <div key={member.id} className="group">
                               <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-white/10 hover:border-[#FF33E1]/50 transition-all duration-300">
                                 <div className="aspect-[286/348] relative">
-                                  <Image
+                                  <ResponsiveImage
                                     src={member.image}
                                     alt={member.name}
                                     fill
@@ -410,7 +410,7 @@ return event_committees
                         <div key={member.id} className="group">
                           <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-white/10 hover:border-[#FF33E1]/50 transition-all duration-300">
                             <div className="aspect-[286/348] relative">
-                              <Image
+                              <ResponsiveImage
                                 src={member.image}
                                 alt={member.name}
                                 fill
@@ -467,7 +467,7 @@ return event_committees
               {/* Faculty Image */}
               <div className="flex flex-col items-center">
                 <div className="relative w-full max-w-sm sm:max-w-md aspect-[440/336] mb-4 sm:mb-6 overflow-hidden rounded-lg">
-                  <Image
+                  <ResponsiveImage
                     src={facultyMembers[currentFacultyIndex].image}
                     alt={facultyMembers[currentFacultyIndex].name}
                     fill

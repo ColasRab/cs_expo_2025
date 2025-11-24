@@ -1,6 +1,7 @@
 "use client";
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import Image from 'next/image';
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export default function Footer() {
   return (
@@ -73,7 +74,7 @@ export default function Footer() {
 
           {/* Logo - Hidden on mobile/tablet, visible on large screens */}
           <div className="flex-shrink-0 mx-auto lg:mx-0">
-          <Image
+          <ResponsiveImage
             src="/logo/expo_logo.png"
             alt="CS Expo Logo"
             width={200}
