@@ -1,6 +1,6 @@
+// src/app/gallery/page.tsx
 "use client"
 import { GalleryColumn } from "@/components/gallery/GalleryColumn"
-import { events } from "./data/events"
 import Footer from "@/components/global/footer"
 import { ProjectsHero } from "../hall-of-fame/ui/ProjectsHero"
 import Navbar from "@/components/global/nav-bar"
@@ -14,7 +14,7 @@ export default function Gallery() {
 
       <div className="relative">
         <ProjectsHero pageTitle="Event Gallery" pageDesc="" />
-        <GalleryColumn events={events} />
+        <GalleryColumn />
       </div>
       <Footer />
       <div />

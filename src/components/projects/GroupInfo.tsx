@@ -24,7 +24,7 @@ export default function ProjectInfo({
     <section className="relative w-full mx-auto px-4 lg:px-6 -mt-[5vh] sm:-mt-[8vh] md:-mt-[10vh]">
       <div className="flex flex-col lg:flex-row gap-8 lg:justify-center items-center lg:items-start">
         {/* LEFT COLUMN — Poster */}
-        <div className="w-[85%] sm:w-[70%] md:w-[60%] lg:w-[650px] aspect-[542/768] mt-8 sm:mt-20 md:mt-0 flex justify-center select-none">
+        <div className="w-[85%] sm:w-[70%] md:w-[60%] lg:w-[650px] aspect-[542/768] mt-8 sm:mt-20 md:mt-0 flex justify-center">
           <Image
             src={
               poster && poster.length > 0
@@ -40,9 +40,9 @@ export default function ProjectInfo({
         </div>
 
         {/* RIGHT COLUMN — Details */}
-        <div className="w-full lg:w-[750px] flex flex-col gap-6 relative mt-8 lg:mt-0 px-2">
+        <div className="w-full lg:w-[750px] flex flex-col gap-6 relative mt-8 lg:mt-0 px-2 sm:px-6">
           {/* Title */}
-          <h3 className="text-2xl sm:text-3xl font-avolta neon-text-pink mb-3 text-center lg:text-left">
+          <h3 className="text-2xl sm:text-3xl font-avolta mb-3 text-center lg:text-left">
             {thesisTitle}
           </h3>
 
