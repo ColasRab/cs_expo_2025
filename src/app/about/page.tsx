@@ -178,7 +178,7 @@ return event_committees
               <div className="relative">
                 <div className="absolute inset-0 bg-[#FF33E1]/20 blur-3xl rounded-full scale-150" />
                 <h1
-                  className="font-monster text-gradient text-2xl leading-[100px] -tracking-[2px] md:text-8xl lg:text-[96px] px-6"
+                  className="font-monster text-gradient text-2xl leading-tight -tracking-[2px] md:text-8xl lg:text-[96px] lg:leading-[90px] xl:leading-[100px] px-6"
                   style={
                     {
                       "--gradient-stop": "35%",
@@ -209,10 +209,10 @@ return event_committees
               {/* Text Content */}
               <div className="flex flex-col justify-center order-1 md:order-2">
                 <div className="prose prose-invert max-w-none font-helvetica">
-                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white">
+                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white text-justify">
                     CS Expo 2025: Digital Reverie is a celebration of innovation and creativity within FEU Tech. It serves as the primary platform for Computer Science students, from both Software Engineering and Data Science to present their brilliant thesis projects. Here, they can demonstrate their technical prowess and skills, while showcasing the solutions they developed, addressing real-world challenges.
                   </p>
-                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white mt-3 sm:mt-4">
+                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white text-justify mt-3 sm:mt-4">
                     This event brings together students, faculty, industry partners, and guests in an immersive experience that highlights the power of young minds in a fast-paced field of technology. This Digital Reverie invites everyone, visionaries and innovations, to further imagine and create solutions that transform the world.
                   </p>
                 </div>
@@ -225,7 +225,7 @@ return event_committees
         <section className="container mx-auto px-4 sm:px-6 md:px-10 py-4 sm:py-16 md:py-20">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
             <h1
-              className="font-monster text-gradient text-2xl leading-[100px] -tracking-[2px] md:text-5xl lg:text-[68px] px-6"
+              className="font-monster text-gradient text-2xl leading-tight -tracking-[2px] md:text-5xl md:leading-tight lg:text-[68px] lg:leading-[72px] xl:leading-[76px] px-6"
               style={
                 {
                   "--gradient-stop": "35%",
@@ -322,7 +322,7 @@ return event_committees
                   </div>
 
                   <h1
-                    className="font-monster text-gradient text-2xl leading-[100px] -tracking-[2px] md:text-8xl lg:text-[96px] px-6"
+                    className="font-monster text-gradient text-2xl leading-tight -tracking-[2px] md:text-8xl lg:text-[96px] lg:leading-[90px] xl:leading-[100px] px-6"
                     style={
                       {
                         "--gradient-stop": "10%",
@@ -437,7 +437,7 @@ return event_committees
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-6 sm:mb-8">
               <h1
-                className="font-monster text-gradient text-2xl leading-[100px] -tracking-[2px] md:text-5xl lg:text-[56px] px-6"
+                className="font-monster text-gradient text-2xl leading-tight -tracking-[2px] md:text-5xl md:leading-tight lg:text-[56px] lg:leading-[60px] xl:leading-[64px] px-6"
                 style={
                   {
                     "--gradient-stop": "35%",
