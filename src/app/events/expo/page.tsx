@@ -25,7 +25,7 @@ function EventsPage() {
   return (
     <div className="min-h-screen bg-[rgba(15,0,25,1)] relative overflow-hidden">
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full h-[600px] md:h-[800px] z-0">
+      <div className="absolute top-0 left-0 w-full h-[500px] sm:h-[550px] md:h-[700px] lg:h-[800px] z-0">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
           style={{
@@ -57,12 +57,12 @@ function EventsPage() {
         />
 
         {/* ---------- DAY 1 SECTION ---------- */}
-        <section className="pt-0 pb-16 px-4 md:px-8">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-30 lg:items-center">
+        <section className="pt-0 pb-12 sm:pb-14 md:pb-16 px-4 sm:px-6 md:px-8">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-24 xl:gap-30 lg:items-center">
             {/* LEFT: Info */}
-            <div className="space-y-6 order-1">
+            <div className="space-y-4 sm:space-y-5 md:space-y-6 order-1">
               <p
-                className="font-avolta text-4xl md:text-[48px] text-white leading-[40px] tracking-[0.1em] mb-1"
+                className="font-avolta text-2xl sm:text-3xl md:text-4xl lg:text-[48px] text-white leading-[32px] sm:leading-[36px] md:leading-[40px] tracking-[0.1em] mb-1"
                 style={{
                   filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.8))",
                 }}
@@ -71,7 +71,7 @@ function EventsPage() {
               </p>
 
               <p
-                className="font-dreamer text-[#FF00DC] text-sm md:text-[20px] leading-[20px] tracking-[0.1em]"
+                className="font-dreamer text-[#FF00DC] text-xs sm:text-sm md:text-base lg:text-lg xl:text-[20px] leading-[18px] sm:leading-[20px] tracking-[0.1em]"
                 style={{
                   filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                 }}
@@ -79,14 +79,14 @@ function EventsPage() {
                 November 13, 2025 | 9:00 AM - 5:00 PM
               </p>
 
-              <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
+              <p className="font-helvetica text-white text-sm sm:text-[15px] md:text-[16px] lg:text-[17px] leading-[20px] sm:leading-[22px] tracking-normal">
                 Explore projects in Computer Vision, Education, Environment, and Agriculture.
               </p>
 
               {/* Keynote Talk */}
-              <div className="space-y-4 text-right">
+              <div className="space-y-3 sm:space-y-4 text-right">
                 <p
-                  className="font-avolta text-4xl md:text-[36px] text-white leading-[40px] mb-1"
+                  className="font-avolta text-2xl sm:text-3xl md:text-[36px] text-white leading-[32px] sm:leading-[36px] md:leading-[40px] mb-1"
                   style={{
                     filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.8))",
                   }}
@@ -94,14 +94,14 @@ function EventsPage() {
                   Keynote Talk
                 </p>
                 <p
-                  className="font-dreamer text-[#FF00DC] text-sm md:text-[20px] leading-[20px] tracking-[0.1em]"
+                  className="font-dreamer text-[#FF00DC] text-xs sm:text-sm md:text-base lg:text-lg xl:text-[20px] leading-[18px] sm:leading-[20px] tracking-[0.1em]"
                   style={{
                     filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                   }}
                 >
                   @Rewired for Reality: Lessons in Adulthood and the World After College
                 </p>
-                <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
+                <p className="font-helvetica text-white text-sm sm:text-[15px] md:text-[16px] lg:text-[17px] leading-[20px] sm:leading-[22px] tracking-normal">
                   Mr. Jericho Menguito shares practical insights on navigating adulthood and transitioning into life and work after college.
                 </p>
               </div>
@@ -119,8 +119,8 @@ function EventsPage() {
         </section>
 
         {/* ---------- DAY 2 SECTION ---------- */}
-        <section className="pt-0 pb-16 px-4 md:px-8">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-30 lg:items-center">
+        <section className="pt-0 pb-12 sm:pb-14 md:pb-16 px-4 sm:px-6 md:px-8">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-24 xl:gap-30 lg:items-center">
             {/* LEFT: Teams (reversed layout) */}
             <div className="w-full order-3 lg:order-1">
               <TeamCategoryBox
@@ -131,9 +131,9 @@ function EventsPage() {
             </div>
 
             {/* RIGHT: Info */}
-            <div className="space-y-6 order-1 lg:order-2">
+            <div className="space-y-4 sm:space-y-5 md:space-y-6 order-1 lg:order-2">
               <p
-                className="font-avolta text-4xl md:text-[48px] text-white leading-[40px] tracking-[0.1em] mb-1"
+                className="font-avolta text-2xl sm:text-3xl md:text-4xl lg:text-[48px] text-white leading-[32px] sm:leading-[36px] md:leading-[40px] tracking-[0.1em] mb-1"
                 style={{
                   filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.8))",
                 }}
@@ -142,7 +142,7 @@ function EventsPage() {
               </p>
 
               <p
-                className="font-dreamer text-[#FF00DC] text-sm md:text-[20px] leading-[20px] tracking-[0.1em]"
+                className="font-dreamer text-[#FF00DC] text-xs sm:text-sm md:text-base lg:text-lg xl:text-[20px] leading-[18px] sm:leading-[20px] tracking-[0.1em]"
                 style={{
                   filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                 }}
@@ -150,13 +150,13 @@ function EventsPage() {
                 November 14, 2025 | 9:00 AM - 5:00 PM
               </p>
 
-              <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
+              <p className="font-helvetica text-white text-sm sm:text-[15px] md:text-[16px] lg:text-[17px] leading-[20px] sm:leading-[22px] tracking-normal">
                 Check out innovations by students in Natural Language Processing and Healthcare.
               </p>
 
-              <div className="space-y-4 text-right">
+              <div className="space-y-3 sm:space-y-4 text-right">
                 <p
-                  className="font-avolta text-4xl md:text-[36px] text-white leading-[40px] mb-1"
+                  className="font-avolta text-2xl sm:text-3xl md:text-[36px] text-white leading-[32px] sm:leading-[36px] md:leading-[40px] mb-1"
                   style={{
                     filter: "drop-shadow(0px 0px 6px rgba(255,255,255,0.8))",
                   }}
@@ -164,15 +164,15 @@ function EventsPage() {
                   Keynote Talk
                 </p>
                 <p
-                  className="font-dreamer text-[#FF00DC] text-sm md:text-[20px] leading-[20px] tracking-[0.1em]"
+                  className="font-dreamer text-[#FF00DC] text-xs sm:text-sm md:text-base lg:text-lg xl:text-[20px] leading-[18px] sm:leading-[20px] tracking-[0.1em]"
                   style={{
                     filter: "drop-shadow(0px 0px 4.4px rgba(255,0,220,0.8))",
                   }}
                 >
                   Digital Transformation in the Philippines: Opportunities and Challenges
                 </p>
-                <p className="font-helvetica text-white text-sm md:text-[16px] leading-[20px] tracking-normal">
-                  Mr. Paul Sears explores the opportunities and challenges in shaping the country’s move toward digital transformation.
+                <p className="font-helvetica text-white text-sm sm:text-[15px] md:text-[16px] lg:text-[17px] leading-[20px] sm:leading-[22px] tracking-normal">
+                  Mr. Paul Sears explores the opportunities and challenges in shaping the country's move toward digital transformation.
                 </p>
               </div>
             </div>

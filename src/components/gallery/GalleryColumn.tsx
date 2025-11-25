@@ -15,22 +15,22 @@ type Props = {
 
 function Modal({ image, onClose }: { image: string | null; onClose: () => void }) {
   if (!image) return null
-  
+
   return (
-    <div 
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-2 sm:p-4"
       onClick={onClose}
     >
       <button
         onClick={onClose}
-        className="absolute right-4 top-4 text-4xl text-white hover:text-gray-300"
+        className="absolute right-2 top-2 sm:right-4 sm:top-4 text-3xl sm:text-4xl text-white hover:text-gray-300 z-10"
       >
         ×
       </button>
       <img
         src={image}
         alt="Full size"
-        className="max-h-[90vh] max-w-[90vw] object-contain"
+        className="max-h-[85vh] sm:max-h-[90vh] max-w-[90vw] object-contain"
       />
     </div>
   )
@@ -118,14 +118,14 @@ export function GalleryColumn({ events: propEvents }: Props) {
   const currentEvent = events[selected]
 
   return (
-    <div className="relative z-20 -mt-43 w-full px-4 py-8">
+    <div className="relative z-20 -mt-43 w-full px-4 sm:px-6 md:px-8 py-6 sm:py-8">
       {/* Event Selection Buttons */}
-      <div className="mb-8 flex items-center justify-center gap-16">
+      <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16">
         {events.map((event, idx) => (
           <button
             key={event.id}
             onClick={() => setSelected(idx)}
-            className={`cursor-pointer rounded-lg border px-6 py-2 text-sm font-medium transition-all ${
+            className={`cursor-pointer rounded-lg border px-4 sm:px-5 md:px-6 py-1.5 sm:py-2 text-xs sm:text-sm font-medium transition-all w-full sm:w-auto max-w-xs sm:max-w-none ${
               selected === idx
                 ? "border border-[#ff00dc] bg-transparent text-[#ff00dc]"
                 : "border border-white text-white hover:border-[#ff00dc] hover:bg-[#ff00dc] hover:text-white"
@@ -135,23 +135,23 @@ export function GalleryColumn({ events: propEvents }: Props) {
           </button>
         ))}
       </div>
-      <hr className="mx-auto mb-10 w-100 sm:w-140 md:w-180 lg:w-230 xl:w-280"></hr>
+      <hr className="mx-auto mb-6 sm:mb-8 md:mb-10 w-full max-w-[250px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[650px] xl:max-w-[800px]"></hr>
 
       {/* Gallery Content */}
       <div className="mx-auto max-w-7xl">
         {loading ? (
-          <div className="flex h-64 items-center justify-center">
-            <div className="text-xl text-white">Loading images...</div>
+          <div className="flex h-48 sm:h-64 items-center justify-center">
+            <div className="text-base sm:text-lg md:text-xl text-white">Loading images...</div>
           </div>
         ) : currentEvent.images.length === 0 ? (
-          <div className="flex h-64 items-center justify-center">
-            <div className="text-xl text-gray-400">No images found for this event</div>
+          <div className="flex h-48 sm:h-64 items-center justify-center">
+            <div className="text-base sm:text-lg md:text-xl text-gray-400">No images found for this event</div>
           </div>
         ) : (
-          <div className="columns-2 gap-4 md:columns-3 lg:columns-4">
+          <div className="columns-1 sm:columns-2 gap-3 sm:gap-4 md:columns-3 lg:columns-4">
             {currentEvent.images.map((image, idx) => (
-              <div key={idx} className="mb-4 break-inside-avoid">
-                <div 
+              <div key={idx} className="mb-3 sm:mb-4 break-inside-avoid">
+                <div
                   className="cursor-pointer transition-transform hover:scale-105"
                   onClick={() => setSelectedImage(image)}
                 >

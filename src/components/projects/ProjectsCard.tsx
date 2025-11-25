@@ -24,9 +24,9 @@ export default function ProjectsCard({
   slug,
 }: ProjectsCardProps) {
   return (
-    <Link href={`/projects/${slug}`} className="block w-full max-w-[400px]">
+    <Link href={`/projects/${slug}`} className="block w-full max-w-[400px] mx-auto">
       <div className="relative group cursor-pointer h-full">
-        <div className="project-card-bg p-4 w-full h-full flex flex-col transition-all duration-300 ease-in-out">
+        <div className="project-card-bg p-3 sm:p-4 w-full h-full flex flex-col transition-all duration-300 ease-in-out">
           <div className="relative w-full aspect-[420/594] overflow-hidden rounded-[16px] select-none">
             <ResponsiveImage
               src={poster || "/projects/default_poster.jpg"}
@@ -43,33 +43,33 @@ export default function ProjectsCard({
 
           {/* Text content */}
           <div className="flex flex-col flex-grow">
-            <h3 className="neon-text-magenta-hover-fade text-2xl mb-2 mt-2 hover-fade">
+            <h3 className="neon-text-magenta-hover-fade text-lg sm:text-xl md:text-2xl mb-2 mt-2 hover-fade">
               {appTitle}
             </h3>
-            <p className="text-body-white-base group-hover:opacity-40 transition-all duration-300">
+            <p className="text-white text-xs sm:text-sm md:text-base leading-relaxed font-helvetica group-hover:opacity-40 transition-all duration-300">
               {thesisTitle}
             </p>
           </div>
         </div>
 
         {/* Hover overlay */}
-        <div className="project-card-overlay p-8 flex flex-col justify-start items-start text-left text-white">
+        <div className="project-card-overlay p-4 sm:p-6 md:p-8 flex flex-col justify-start items-start text-left text-white">
           <div className="w-full">
             {/* App Name */}
             <p
-              className="neon-text-pink text-2xl"
+              className="neon-text-pink text-lg sm:text-xl md:text-2xl"
             >
               {appTitle}
             </p>
 
             {/* Thesis Title */}
-            <p className="text-body-white-base mb-4">{thesisTitle}</p>
+            <p className="text-white text-xs sm:text-sm md:text-base font-helvetica leading-relaxed mb-3 sm:mb-4">{thesisTitle}</p>
 
             {/* Members List */}
-            <div className="mb-4">
-              <h4 className="neon-text-pink text-xl"
+            <div className="mb-3 sm:mb-4">
+              <h4 className="neon-text-pink text-base sm:text-lg md:text-xl"
                 >Members</h4>
-              <ul className="text-body-white">
+              <ul className="text-white text-[10px] sm:text-xs md:text-sm font-helvetica leading-relaxed">
                 {members.map((member) => (
                   <li key={member}>{member}</li>
                 ))}
@@ -77,18 +77,18 @@ export default function ProjectsCard({
             </div>
 
             {/* Mentor */}
-            <div className="mb-4">
-              <h4 className="neon-text-pink text-xl"
+            <div className="mb-3 sm:mb-4">
+              <h4 className="neon-text-pink text-base sm:text-lg md:text-xl"
                 >Mentor</h4>
-              <p className="text-body-white">{mentor}</p>
+              <p className="text-white text-[10px] sm:text-xs md:text-sm font-helvetica leading-relaxed">{mentor}</p>
             </div>
 
             {/* Category List */}
             <div>
-              <h4 className="neon-text-pink text-xl"
+              <h4 className="neon-text-pink text-base sm:text-lg md:text-xl"
                 >Topics</h4>
               {category.map((cat) => (
-                <p key={cat} className="text-body-white">{cat}</p>
+                <p key={cat} className="text-white text-[10px] sm:text-xs md:text-sm font-helvetica leading-relaxed">{cat}</p>
               ))}
             </div>
           </div>

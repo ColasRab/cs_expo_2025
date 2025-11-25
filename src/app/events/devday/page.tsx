@@ -11,7 +11,7 @@ function DevDayPage() {
   return (
     <div className="min-h-screen bg-[rgba(15,0,25,1)] relative overflow-hidden">
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full h-[600px] md:h-[800px] z-0">
+      <div className="absolute top-0 left-0 w-full h-[500px] sm:h-[550px] md:h-[700px] lg:h-[800px] z-0">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -29,34 +29,34 @@ function DevDayPage() {
 
       {/* SVG Shape Background 1 - Left Side */}
       <div className="absolute left-0 top-[25%] -translate-y-1/2 z-0 opacity-70">
-        <img 
-          src="/events/shape-240.svg" 
-          alt="" 
-          className="w-[150px] md:w-[300px] lg:w-[500px]"
+        <img
+          src="/events/shape-240.svg"
+          alt=""
+          className="w-[100px] sm:w-[150px] md:w-[250px] lg:w-[400px] xl:w-[500px]"
         />
       </div>
 
       {/* SVG Shape Background 2 - Right Side */}
       <div className="absolute right-0 top-[30%] -translate-y-1/2 z-0 opacity-70">
-        <img 
-          src="/events/shape-240-2.svg" 
-          alt="" 
-          className="w-[150px] md:w-[300px] lg:w-[300px]"
+        <img
+          src="/events/shape-240-2.svg"
+          alt=""
+          className="w-[100px] sm:w-[150px] md:w-[250px] lg:w-[300px]"
         />
       </div>
 
        {/* SVG Shape Background 3 - Left Side */}
-      <div 
+      <div
         className="absolute left-[0] top-[50%] -translate-y-1/2 z-0 opacity-70"
         style={{
           maskImage: 'linear-gradient(to bottom, black 0%, black 50%, transparent 100%)',
           WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 50%, transparent 100%)'
         }}
       >
-        <img 
-          src="/events/shape-240-3.svg" 
-          alt="" 
-          className="w-[150px] md:w-[300px] lg:w-[300px]"
+        <img
+          src="/events/shape-240-3.svg"
+          alt=""
+          className="w-[100px] sm:w-[150px] md:w-[250px] lg:w-[300px]"
         />
       </div>
      

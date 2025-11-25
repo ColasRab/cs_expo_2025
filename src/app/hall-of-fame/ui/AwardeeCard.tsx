@@ -52,12 +52,12 @@ export function AwardeeCard({
         {/* Card */}
         <div
           className={clsx(
-            "group relative flex h-[570px] w-full flex-col overflow-hidden rounded-[16px] border-[1px] p-4 shadow-lg",
+            "group relative flex h-[500px] sm:h-[540px] md:h-[570px] w-full flex-col overflow-hidden rounded-[14px] sm:rounded-[16px] border-[1px] p-3 sm:p-4 shadow-lg",
             alt ? "border-[#A2108D] bg-[#FF37E31A]" : "border-[#8A38F5] bg-[#8A38F51A]"
           )}
         >
           {/* Image container */}
-          <div className="relative h-[285px] w-full flex-shrink-0 overflow-hidden rounded-[16px]">
+          <div className="relative h-[240px] sm:h-[265px] md:h-[285px] w-full flex-shrink-0 overflow-hidden rounded-[14px] sm:rounded-[16px]">
             <ResponsiveImage
               src={current.img}
               alt={current.groupName}
@@ -69,13 +69,13 @@ export function AwardeeCard({
           </div>
 
           {/* Text contents */}
-          <div className="mt-4 flex w-full flex-1 flex-col text-white sm:mt-6">
+          <div className="mt-3 sm:mt-4 md:mt-6 flex w-full flex-1 flex-col text-white">
             <div className="flex-1">
               {current.presenter ? (
                 <div className="flex flex-col">
                   <p
                     className={clsx(
-                      "font-avolta mb-1 text-[20px] leading-[26px]",
+                      "font-avolta mb-1 text-[16px] sm:text-[18px] md:text-[20px] leading-[22px] sm:leading-[24px] md:leading-[26px]",
                       alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                     )}
                     style={{
@@ -88,7 +88,7 @@ export function AwardeeCard({
                   </p>
                   <p
                     className={clsx(
-                      "font-avolta text-[18px] leading-[24px] font-light",
+                      "font-avolta text-[15px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] font-light",
                       alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                     )}
                     style={{
@@ -103,7 +103,7 @@ export function AwardeeCard({
               ) : (
                 <p
                   className={clsx(
-                    "font-avolta text-[20px] leading-[26px]",
+                    "font-avolta text-[16px] sm:text-[18px] md:text-[20px] leading-[22px] sm:leading-[24px] md:leading-[26px]",
                     alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                   )}
                   style={{
@@ -116,10 +116,10 @@ export function AwardeeCard({
                 </p>
               )}
 
-              <p className="font-helvetica mt-2 text-[16px] leading-[20px] font-light">
+              <p className="font-helvetica mt-2 text-[13px] sm:text-[14px] md:text-[16px] leading-[18px] sm:leading-[19px] md:leading-[20px] font-light">
                 {current.thesisTitle}
               </p>
-              <p className="font-helvetica mt-2 text-[14px] leading-[20px] font-light text-white/50">
+              <p className="font-helvetica mt-2 text-[12px] sm:text-[13px] md:text-[14px] leading-[18px] sm:leading-[19px] md:leading-[20px] font-light text-white/50">
                 {current.tags}
               </p>
             </div>
@@ -129,9 +129,9 @@ export function AwardeeCard({
               href={"https://cs-expo-2025.vercel.app/projects/" + slugify(current.groupName)}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-helvetica mt-3 block w-full rounded-full border-2 py-2 text-center text-sm font-light hover:bg-white hover:text-black sm:mt-4 md:hidden"
+              className="font-helvetica mt-2 sm:mt-3 md:mt-4 block w-full rounded-full border-2 py-1.5 sm:py-2 text-center text-xs sm:text-sm font-light hover:bg-white hover:text-black md:hidden"
             >
-              Learn More <LiaLongArrowAltRightSolid className="mb-1 inline-block text-xl" />
+              Learn More <LiaLongArrowAltRightSolid className="mb-1 inline-block text-lg sm:text-xl" />
             </a>
           </div>
 
@@ -249,9 +249,9 @@ export function AwardeeCard({
 
   // Multiple winners
   return (
-    <div className="flex gap-3 sm:gap-4">
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
       {awardees.map((current, index) => (
-        <div key={index} className="relative flex-1 pt-3 sm:pt-3">
+        <div key={index} className="relative flex-1 pt-3">
           {/* Rank */}
           <div className="absolute left-1/2 z-30 -translate-x-1/2 -translate-y-6 sm:-translate-y-8">
             {/* Shadow/Border layer */}
@@ -278,12 +278,12 @@ export function AwardeeCard({
           {/* Card */}
           <div
             className={clsx(
-              "group relative flex h-[570px] w-full flex-col overflow-hidden rounded-[16px] border-[1px] p-4 shadow-lg",
+              "group relative flex h-[500px] sm:h-[540px] md:h-[570px] w-full flex-col overflow-hidden rounded-[14px] sm:rounded-[16px] border-[1px] p-3 sm:p-4 shadow-lg",
               alt ? "border-[#A2108D] bg-[#FF37E31A]" : "border-[#8A38F5] bg-[#8A38F51A]"
             )}
           >
             {/* Image container */}
-            <div className="relative h-[285px] w-full flex-shrink-0 overflow-hidden rounded-[16px]">
+            <div className="relative h-[240px] sm:h-[265px] md:h-[285px] w-full flex-shrink-0 overflow-hidden rounded-[14px] sm:rounded-[16px]">
               <ResponsiveImage
                 src={current.img}
                 alt={current.groupName}
@@ -295,13 +295,13 @@ export function AwardeeCard({
             </div>
 
             {/* Text contents */}
-            <div className="mt-4 flex w-full flex-1 flex-col text-white sm:mt-6">
+            <div className="mt-3 sm:mt-4 md:mt-6 flex w-full flex-1 flex-col text-white">
               <div className="flex-1">
                 {current.presenter ? (
                   <div className="flex flex-col">
                     <p
                       className={clsx(
-                        "font-avolta mb-1 text-[20px] leading-[26px]",
+                        "font-avolta mb-1 text-[16px] sm:text-[18px] md:text-[20px] leading-[22px] sm:leading-[24px] md:leading-[26px]",
                         alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                       )}
                       style={{
@@ -314,7 +314,7 @@ export function AwardeeCard({
                     </p>
                     <p
                       className={clsx(
-                        "font-avolta text-[18px] leading-[24px] font-light",
+                        "font-avolta text-[15px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] font-light",
                         alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                       )}
                       style={{
@@ -329,7 +329,7 @@ export function AwardeeCard({
                 ) : (
                   <p
                     className={clsx(
-                      "font-avolta text-[20px] leading-[26px]",
+                      "font-avolta text-[16px] sm:text-[18px] md:text-[20px] leading-[22px] sm:leading-[24px] md:leading-[26px]",
                       alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                     )}
                     style={{
@@ -342,10 +342,10 @@ export function AwardeeCard({
                   </p>
                 )}
 
-                <p className="font-helvetica mt-2 text-[16px] leading-[20px] font-light">
+                <p className="font-helvetica mt-2 text-[13px] sm:text-[14px] md:text-[16px] leading-[18px] sm:leading-[19px] md:leading-[20px] font-light">
                   {current.thesisTitle}
                 </p>
-                <p className="font-helvetica mt-2 text-[14px] leading-[20px] font-light text-white/50">
+                <p className="font-helvetica mt-2 text-[12px] sm:text-[13px] md:text-[14px] leading-[18px] sm:leading-[19px] md:leading-[20px] font-light text-white/50">
                   {current.tags}
                 </p>
               </div>
@@ -355,9 +355,9 @@ export function AwardeeCard({
                 href={"https://cs-expo-2025.vercel.app/projects/" + slugify(current.groupName)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-helvetica mt-3 block w-full rounded-full border-2 py-2 text-center text-sm font-light hover:bg-white hover:text-black sm:mt-4 md:hidden"
+                className="font-helvetica mt-2 sm:mt-3 md:mt-4 block w-full rounded-full border-2 py-1.5 sm:py-2 text-center text-xs sm:text-sm font-light hover:bg-white hover:text-black md:hidden"
               >
-                Learn More <LiaLongArrowAltRightSolid className="mb-1 inline-block text-xl" />
+                Learn More <LiaLongArrowAltRightSolid className="mb-1 inline-block text-lg sm:text-xl" />
               </a>
             </div>
 

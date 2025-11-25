@@ -106,10 +106,10 @@ export default function Hero({
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   return (
-    <section className="relative pt-[180px] md:pt-[210px] lg:pt-[240px] pb-8 mb-16 md:mb-8 lg:mb-16 px-4 text-center overflow-hidden old-tv">
+    <section className="relative pt-[140px] sm:pt-[160px] md:pt-[190px] lg:pt-[220px] xl:pt-[240px] pb-6 sm:pb-8 mb-12 sm:mb-14 md:mb-12 lg:mb-16 px-4 sm:px-6 text-center overflow-hidden old-tv">
       {/* 🔹 Background text pattern */}
       <div
-        className="absolute -top-[220px] md:-top-[260px] lg:-top-[320px] left-0 right-0 flex flex-col items-center pointer-events-none z-0"
+        className="absolute -top-[180px] sm:-top-[220px] md:-top-[260px] lg:-top-[300px] xl:-top-[320px] left-0 right-0 flex flex-col items-center pointer-events-none z-0"
         style={{
           maskImage:
             "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 70%, transparent 100%)",
@@ -120,7 +120,7 @@ export default function Hero({
         {[...Array(17)].map((_, i) => (
           <div
             key={i}
-            className="font-monster text-[40px] md:text-[60px] lg:text-[80px] whitespace-nowrap tracking-widest leading-[30px] md:leading-[45px] lg:leading-[60px] opacity-30"
+            className="font-monster text-[30px] sm:text-[40px] md:text-[55px] lg:text-[70px] xl:text-[80px] whitespace-nowrap tracking-widest leading-[24px] sm:leading-[30px] md:leading-[40px] lg:leading-[50px] xl:leading-[60px] opacity-30"
             style={{
               WebkitTextStroke: `1px ${currentConfig.accentColor}`,
               color: "transparent",
@@ -134,7 +134,7 @@ export default function Hero({
 
       {/* 🔹 SVG Background */}
       <div
-        className="absolute inset-[-50px] md:inset-[-75px] lg:inset-[-100px] flex items-center justify-center pointer-events-none z-0"
+        className="absolute inset-[-40px] sm:inset-[-50px] md:inset-[-70px] lg:inset-[-90px] xl:inset-[-100px] flex items-center justify-center pointer-events-none z-0"
         style={{
           transform: `translate(${currentConfig.svgTranslateX}, calc(${currentConfig.svgTranslateY} - -20px)) ${
             currentConfig.svgFlipped ? "scaleX(-1)" : "scaleX(1)"
@@ -144,7 +144,7 @@ export default function Hero({
         <img
           src="/backgrounds/3.png"
           alt=""
-          className="w-[300px] md:w-[500px] lg:w-[600px] h-full object-contain"
+          className="w-[250px] sm:w-[300px] md:w-[450px] lg:w-[550px] xl:w-[600px] h-full object-contain"
         />
       </div>
 
@@ -177,8 +177,8 @@ export default function Hero({
       </div>
 
       {/* 🔹 Hero Title & Description */}
-      <div className="max-w-6xl mx-auto relative z-20 flex flex-col items-center gap-6">
-        <div className="flex items-center justify-center gap-6 flex-wrap">
+      <div className="max-w-6xl mx-auto relative z-20 flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
+        <div className="flex items-center justify-center gap-4 sm:gap-5 md:gap-6 flex-wrap">
           <div
             className="font-monster tracking-[0.09em] [text-shadow:0_2px_7.2px_rgba(255,255,255,0.1)]"
             style={{
@@ -192,7 +192,7 @@ export default function Hero({
             }}
           >
             <p
-              className="text-[48px] md:text-[85px] lg:text-[110px] leading-[50px] md:leading-[70px] lg:leading-[85px] mb-0"
+              className="text-[36px] sm:text-[48px] md:text-[70px] lg:text-[90px] xl:text-[110px] leading-[38px] sm:leading-[50px] md:leading-[60px] lg:leading-[75px] xl:leading-[85px] mb-0"
               style={{ letterSpacing: "-0.02em", whiteSpace: "pre-line" }}
             >
               {title.replace(" ", "\n")}
@@ -201,7 +201,7 @@ export default function Hero({
         </div>
 
         <p
-          className={`text-white/100 max-w-[754px] mx-auto font-helvetica text-[14px] md:text-[16px] lg:text-[20px] px-4 ${isMobile ? "mt-24" : "mt-16"}`}
+          className={`text-white/100 max-w-[600px] sm:max-w-[680px] md:max-w-[730px] lg:max-w-[754px] mx-auto font-helvetica text-[13px] sm:text-[14px] md:text-[15px] lg:text-[18px] xl:text-[20px] px-4 leading-relaxed ${isMobile ? "mt-16 sm:mt-20 md:mt-24" : "mt-12 sm:mt-14 md:mt-16"}`}
         >
           {description}
         </p>

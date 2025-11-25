@@ -68,8 +68,8 @@ export default function Home() {
         <Navbar />
         <div className="relative z-10 bg-gradient-to-b from-transparent via-transparent to-[#0F0019]">
           <HeroSection />
-          <div className="text-center text-white px-4">
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg tracking-wide mb-2 sm:mb-3">
+          <div className="text-center text-white px-4 py-8 sm:py-10 md:py-12">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-wide mb-4 sm:mb-5 md:mb-6">
               In Partnerships with
             </p>
             <SponsorCarousel

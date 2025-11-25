@@ -26,14 +26,14 @@ function TeamCategoryBox({ categories, teams, onCategorySelect }: TeamCategoryBo
   const filteredTeams = teams.filter((team) => team.category === activeCategory);
 
   return (
-    <div className="border border-white rounded-[20px] p-6 md:p-8 px-[24px] py-[18px]">
+    <div className="border border-white rounded-[16px] sm:rounded-[18px] md:rounded-[20px] p-4 sm:p-5 md:p-6 lg:p-8">
       {/* Category Pills at Top */}
-      <div className="flex flex-wrap justify-center gap-[10px] mb-6">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5 md:gap-[10px] mb-4 sm:mb-5 md:mb-6">
         {categories.map((category, index) => (
           <button
             key={index}
             onClick={() => setActiveCategory(category)}
-            className={`h-[30px] px-[15px] py-[5px] rounded-[8px] text-[12px] font-helvetica font-semibold flex items-center justify-center whitespace-nowrap transition-all duration-200 cursor-pointer
+            className={`h-[28px] sm:h-[30px] px-3 sm:px-[15px] py-[5px] rounded-[8px] text-[11px] sm:text-[12px] font-helvetica font-semibold flex items-center justify-center whitespace-nowrap transition-all duration-200 cursor-pointer
               ${
                 activeCategory === category
                   ? "border-2 border-[#FF37E3] text-[#FF37E3]"
@@ -46,13 +46,13 @@ function TeamCategoryBox({ categories, teams, onCategorySelect }: TeamCategoryBo
       </div>
 
       {/* Divider */}
-      <div className="w-full h-px bg-white mb-6"></div>
+      <div className="w-full h-px bg-white mb-4 sm:mb-5 md:mb-6"></div>
 
       {/* Teams Grid */}
-      <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-3 sm:gap-y-4">
         {filteredTeams.map((team, index) => (
-          <div key={index} className="text-center">
-            <p className="text-white text-[24px] font-helvetica">{team.name}</p>
+          <div key={index} className="text-center sm:text-left">
+            <p className="text-white text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-helvetica">{team.name}</p>
           </div>
         ))}
       </div>
