@@ -116,9 +116,9 @@ function Modal({ image, onClose, onNext, onPrev, hasNext, hasPrev }: {
 export function GalleryColumn() {
 
   const [events, setEvents] = useState<Event[]>([
-    { id: 1, name: "Day 1",        folder: "CS_EXPO/pics/Day_1", images: [] },
-    { id: 2, name: "Day 2",        folder: "CS_EXPO/pics/Day_2", images: [] },
-    { id: 3, name: "Dev Day",      folder: "CS_EXPO/pics/Day_3", images: [] },
+    { id: 1, name: "Dev Day",        folder: "CS_EXPO/pics/Day_1", images: [] },
+    { id: 2, name: "Day 1",        folder: "CS_EXPO/pics/Day_2", images: [] },
+    { id: 3, name: "Day 2",      folder: "CS_EXPO/pics/Day_3", images: [] },
   ])
 
   const [selected, setSelected] = useState(0)
