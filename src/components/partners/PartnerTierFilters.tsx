@@ -6,8 +6,8 @@ interface PartnerTierFiltersProps {
 }
 
 const partnerTiers = [
-  ["Diamond Sponsors", "Gold Sponsors", "Silver Sponsors", "Media Partners"],
-  ["Bronze Sponsors", "Minor Partners", "Major Partners", "Community Development Partners"]
+  ["Diamond Sponsors", "Gold Sponsors", "Silver Sponsors", "Bronze Sponsors"],
+  ["Media Partners", "Community Development Partners", "Major Partners", "Minor Partners"]
 ];
 
 export default function PartnerTierFilters({ onFilterChange }: PartnerTierFiltersProps) {

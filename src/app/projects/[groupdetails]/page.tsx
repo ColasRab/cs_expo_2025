@@ -1,10 +1,12 @@
 import { projects } from "../data/ProjectsData";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import Navbar from "@/components/global/nav-bar";
 import Footer from "@/components/global/footer";
 import ProjectInfo from "@/components/projects/GroupInfo";
 import GroupGallery from "@/components/projects/GroupGallery";
 import GroupHero from "@/components/projects/GroupHero";
+import AVP from "@/components/projects/AVP";
 
 type ProjectPageProps = {
   params: {
@@ -24,10 +26,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <main className="bg-black text-white overflow-x-hidden">
-      {/* 🔹 Navbar */}
       <Navbar />
 
-      {/* 🔹 Hero Section (hidden on mobile for performance) */}
       <div className="hidden md:block">
         <GroupHero
           appTitle={appTitle}
@@ -62,20 +62,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <div className="w-full max-w-6xl mx-auto border-t border-white mt-6"></div>
 
           {details.videoLink && (
-            <div className="flex justify-center pt-10 pb-0">
-              <div className="w-full max-w-[1366px] px-4">
-                <div className="aspect-video w-full overflow-hidden border-2 border-[#000000]">
-                  <iframe
-                    src={details.videoLink}
-                    title="Project Video Showcase"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full"
-                  ></iframe>
+            <Suspense
+              fallback={
+                <div className="flex justify-center items-center py-12">
+                  <div className="text-[#FF00DC]">Loading video…</div>
                 </div>
-              </div>
-            </div>
+              }
+            >
+              <AVP videoLink={details.videoLink} />
+            </Suspense>
           )}
         </section>
 

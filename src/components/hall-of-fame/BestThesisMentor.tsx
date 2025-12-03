@@ -57,23 +57,23 @@ export function BestThesisMentor() {
         <div className="relative w-full lg:order-2 lg:h-full lg:w-1/2">
           <div className="flex h-full w-full items-center justify-center px-6 pt-4 sm:px-8 sm:pt-6 lg:p-12 xl:p-16">
             <div
-              className="group relative aspect-square w-full max-w-[400px] cursor-pointer overflow-hidden rounded-[12px] border-2 border-[#8A38F5]/20 transition-transform duration-300 hover:scale-105 sm:max-w-[500px] sm:rounded-[16px] lg:max-w-[600px] lg:hover:scale-102"
+              className="group relative w-full max-w-none cursor-pointer overflow-hidden rounded-[16px] border-2 border-[#8A38F5]/20 transition-transform duration-300 hover:scale-103 sm:rounded-[20px] lg:max-w-[900px]"
               style={{
-                boxShadow: "0 0 40px rgba(138,56,245,0.3), 0 0 20px rgba(255,55,227,0.2)",
+              boxShadow: "0 0 60px rgba(138,56,245,0.35), 0 0 30px rgba(255,55,227,0.25)",
+              height: "min(60vh, 720px)",
               }}
             >
               <ResponsiveImage
-                src="https://sdeirkuuvtttfxftgpdc.supabase.co/storage/v1/object/public/pics/3/IMG_7291.jpg"
-                alt="Mentor image"
-                fill
-                className="cursor-default object-cover transition-transform duration-300 select-none group-hover:scale-110"
-                style={{
-                  objectPosition: "25% 50%", // <-- X% Y%
-                }}
-                priority
-                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 80vw, 50vw"
+              src="https://sdeirkuuvtttfxftgpdc.supabase.co/storage/v1/object/public/pics/3/IMG_7291.jpg"
+              alt="Mentor image"
+              fill
+              className="cursor-default object-cover transition-transform duration-300 select-none group-hover:scale-110"
+              style={{
+                objectPosition: "20% 50%", // <-- X% Y%
+              }}
+              priority
+              sizes="(max-width: 720px) 95vw, (max-width: 1200px) 90vw, 60vw"
               />
-
             </div>
           </div>
         </div>

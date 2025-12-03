@@ -50,13 +50,13 @@ export const allPartners: Partner[] = [
     link: "https://www.facebook.com/share/1AT9LMLU7q/?mibextid=wwXIfr",
     tier: "Gold Sponsors"
   },
-  // Silver Sponsors
   {
-    name: "It’s A Wrap Shawarma",
-    logo: "https://oyjvxrlsiaithbqhjgtl.supabase.co/storage/v1/object/public/Misc/partners/Wrap.png",
-    link: "https://www.facebook.com/itsawrapp",
-    tier: "Silver Sponsors"
+    name: "Globe Telecom",
+    logo: "https://oyjvxrlsiaithbqhjgtl.supabase.co/storage/v1/object/public/Misc/partners/Globe.png",
+    link: "https://www.globe.com.ph/",
+    tier: "Gold Sponsors"
   },
+  // Silver Sponsors
   {
     name: "Genos' Food Hub",
     logo: "https://oyjvxrlsiaithbqhjgtl.supabase.co/storage/v1/object/public/Misc/partners/Genos.png",
@@ -183,7 +183,7 @@ export const allPartners: Partner[] = [
   },
   {
     name: "IEEP - Cebu Technological University Student Chapter",
-    logo: "https://oyjvxrlsiaithbqhjgtl.supabase.co/storage/v1/object/public/Misc/partners/MSC.png",
+    logo: "https://oyjvxrlsiaithbqhjgtl.supabase.co/storage/v1/object/public/Misc/partners/IECEP.png",
     link: "#",
     tier: "Major Partners"
   },

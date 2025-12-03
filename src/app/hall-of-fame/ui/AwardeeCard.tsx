@@ -57,14 +57,14 @@ export function AwardeeCard({
           )}
         >
           {/* Image container */}
-          <div className="relative h-[285px] w-full flex-shrink-0 overflow-hidden rounded-[16px]">
+          <div className="relative h-[220px] w-full flex-shrink-0 overflow-hidden rounded-[16px]">
             <ResponsiveImage
               src={current.img}
               alt={current.groupName}
               fill
               className="object-cover transition-transform duration-300 select-none group-hover:scale-105"
               priority
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              sizes="(max-width: 640px) 80vw, (max-width: 1024px) 40vw, 33vw"
             />
           </div>
 
@@ -75,7 +75,7 @@ export function AwardeeCard({
                 <div className="flex flex-col">
                   <p
                     className={clsx(
-                      "font-avolta mb-1 text-[20px] leading-[26px]",
+                      "font-avolta mb-1 text-[30px] leading-[26px]",
                       alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                     )}
                     style={{
@@ -88,7 +88,7 @@ export function AwardeeCard({
                   </p>
                   <p
                     className={clsx(
-                      "font-avolta text-[18px] leading-[24px] font-light",
+                      "font-avolta text-[20px] leading-[24px] font-light",
                       alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                     )}
                     style={{
@@ -103,7 +103,7 @@ export function AwardeeCard({
               ) : (
                 <p
                   className={clsx(
-                    "font-avolta text-[20px] leading-[26px]",
+                    "font-avolta text-[30px] leading-[26px]",
                     alt ? "text-[#FF37E3]" : "text-[#8A38F5]"
                   )}
                   style={{
@@ -290,7 +290,7 @@ export function AwardeeCard({
                 fill
                 className="object-cover transition-transform duration-300 select-none group-hover:scale-105"
                 priority
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                sizes="(max-width: 640px) 33vw, (max-width: 1024px) 33vw, 25vw"
               />
             </div>
 

@@ -6,6 +6,8 @@ import { getBox1Data, getBox2Data } from "@/app/events/data/boxData";
 import Navbar from "@/components/global/nav-bar";
 import Footer from "@/components/global/footer";
 import TeamCategoryBox from "@/components/events/TeamCategoryBox";
+import { csSpeakers } from "@/app/events/data/csSpeakers";
+import SpeakersCarousel from "@/components/events/SpeakersCarousel";
 
 function EventsPage() {
   const box1 = getBox1Data();
@@ -178,7 +180,7 @@ function EventsPage() {
             </div>
           </div>
         </section>
-
+        <SpeakersCarousel speakers={csSpeakers} />
         <Footer />
       </div>
     </div>

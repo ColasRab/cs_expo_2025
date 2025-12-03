@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '@/components/events/Hero';
 import SpeakersCarousel from '@/components/events/SpeakersCarousel';
 import DevDayScheduleLayout from '@/components/events/DevDayScheduleLayout';
-import { testSpeakers } from '@/app/events/data/testSpeakers';
+import { devSpeakers } from '@/app/events/data/devdaySpeakers';
 import Navbar from '@/components/global/nav-bar';
 import Footer from '@/components/global/footer';
 
@@ -107,7 +107,7 @@ function DevDayPage() {
         
 
         {/* Speakers Carousel for Dev Day */}
-        <SpeakersCarousel speakers={testSpeakers} />
+        <SpeakersCarousel speakers={devSpeakers} />
 
         {/* Footer */}
         <footer>

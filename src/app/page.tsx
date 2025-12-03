@@ -7,6 +7,7 @@ import Navbar from "@/components/global/nav-bar"
 import FaultyTerminal from "@/components/FaultyTerminal"
 import Hero from "@/components/home/Hero"
 import SponsorCarousel from "@/components/home/sponsor-carousel"
+import AVP from "@/components/projects/AVP"
 
 export default function Home() {
   const [scale, setScale] = useState(1.5)
@@ -91,6 +92,13 @@ export default function Home() {
           variant="expo"
           textDirection="horizontal-right"
         />
+        {/* Embedded AVP for CS EXPO (Google Drive) */}
+        <section className="container mx-auto px-4 sm:px-6 md:px-10 py-12">
+          <div className="text-center mb-6">
+            <h2 className="font-monster text-gradient text-2xl md:text-4xl">CS EXPO AVP</h2>
+          </div>
+          <AVP videoLink={"https://drive.google.com/file/d/11XFPnLLtUf1_5xN5_oT9xfmTmlLUMg-T/view?usp=drive_link"} />
+        </section>
       </div>
       <Footer />
     </div>

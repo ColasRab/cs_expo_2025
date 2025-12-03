@@ -126,7 +126,7 @@ return event_committees
     image: facultyPlaceholder
   }));
 
-  const itemsPerPage = 8;
+  const itemsPerPage = 4;
   
   if (!teamMembers) {
     return (
@@ -202,6 +202,7 @@ return event_committees
                     width={536}
                     height={714}
                     className="rounded-xl sm:rounded-2xl w-full h-auto"
+                    priority
                   />
                 </div>
               </div>
@@ -256,8 +257,8 @@ return event_committees
               </div>
             </button>
 
-            {/* Team Grid - 2 rows x 4 columns */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+            {/* Team Grid - 2 rows x 2 columns */}
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
               {displayedTeamMembers.map((member) => (
                 <div key={member.id} className="group">
                   <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-white/10 hover:border-[#FF33E1]/50 transition-all duration-300">

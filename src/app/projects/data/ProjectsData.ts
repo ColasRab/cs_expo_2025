@@ -25,7 +25,8 @@ export const projects = groupsData.map((group) => ({
       ? [group.category]
       : [],
     thesisDescription: group.thesis_description,
-    videoLink: group.avp_url || undefined,
+    // prefer the newer `group_avp` field, fall back to legacy `avp_url` if present
+    videoLink: group.group_avp || group.avp_url || undefined,
     photoshoot: group.group_picture_url,  // background / hero images
     memberPictures: group.member_picture, // individual member images
   },

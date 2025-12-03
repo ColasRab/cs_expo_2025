@@ -1,17 +1,11 @@
 // For testing purposes only
 
-export const testSpeakers = [
+export const devSpeakers = [
   {
     name: "Ms. Deirdre Conde",
     title: "Chief Operating Officer, Eskwelabs",
     bio: "A trailblazer in education technology and social impact innovation. With over a decade of experience as COO and Data Science Fellow at Eskwelabs, she leads with expertise in product management, operations, and strategy—driving inclusive, tech-powered solutions.",
     image: "/speakers/deirdre.jpg"
-  },
-  {
-    name: "Mr. Paul Sears",
-    title: "Founder and CEO, CloudSensei",
-    bio: "A visionary tech leader shaping the future of innovation in the Philippines. With over 30 years of expertise across ICT, OT, cloud, and GenAI, he empowers organizations and bridges the gap between tech graduates and the industry.",
-    image: "/speakers/sears.png"
   },
   {
     name: "Mr. Sermil Matoto",

@@ -16,6 +16,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/define2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/hashdefine_Thesis%20Logo.png",
+        "group_avp": "https://drive.google.com/file/d/1qMxO3e22Np95h-wkAyPo99LhUGNDJAHj/view?usp=drive_link",
         "members": [
             "Jan Vincenzo C. Reyes",
             "Joseph Allen D. Atentar",
@@ -43,6 +44,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/bytes2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/4Bytes_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1K0WjzOjsDWKUP0ijbKhHMrFepo-jW0dd/view?usp=drive_link",
         "members": [
             "Kylle Marius M. Hardin",
             "Iolo Christopher M. Bonggay",
@@ -70,6 +72,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/abra2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/ABRA_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1wa5CXuXYcBQU5tPVC6NVrYdK8HgQaE-A/view?usp=drive_link",
         "members": [
             "Karl Alexis R. Revilla",
             "Joshua R. Albufera",
@@ -97,6 +100,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/aethiopem2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Aethiopem_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/11G5nZOURGtfKLS0mCm67QlXARhlGAfYf/view?usp=drive_link",
         "members": [
             "Tracy Jon Phope B. Lansang",
             "Bjorn Kurt G. Berin",
@@ -124,6 +128,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/agile2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Agile_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1uhTbZNrTayQw6GDMandpI1EEGZlawYkd/view?usp=drive_link",
         "members": [
             "Jansen Jhoel G. Moral",
             "John Christian S. Paglinawan",
@@ -151,6 +156,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/akira2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Akira_Thesis-Logo.png",
+        "group_avp": "https://drive.google.com/file/d/1LTNp1umm4Sak8SC-RVk7D11plqfRgUhS/view?usp=drive_link",
         "members": [
             "Dustin Rafe C. Wania",
             "Exequiel U. Bangal",
@@ -177,6 +183,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/arise1.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/ARISE_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/14vwDraIFjfJ4dqbFMj-AyOVCVhWLjoSu/view?usp=drive_link",
         "members": [
             "Mark Robert C. Amor",
             "Matthew O. Barcelon",
@@ -205,6 +212,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/autonomoux2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Autonomoux_ThesisLogo.PNG",
+        "group_avp": "https://drive.google.com/file/d/1bj-OeJmHMYe5VwENOTlFqnOlkysjCTwB/view?usp=drive_link",
         "members": [
             "Kyle Robin Andaya",
             "Rami Yousef Abuarqoub",
@@ -232,6 +240,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/bogosort2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/BOGOSORT_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1ocqRl1TGI6JoqgzK6xL8_JEY_Hk38N5V/view?usp=drive_link",
         "members": [
             "Bill Louis P. Medina",
             "Justin Mae N. Celestial",
@@ -258,6 +267,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/bytesized2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Byte-Sized_Thesis%20Logo.png",
+        "group_avp": "https://drive.google.com/file/d/1rxgMKYSThBsF67Clh0F80xzi_s3baqaf/view?usp=drive_link",
         "members": [
             "John Julius C. David",
             "Rona Joy F. Balbedina",
@@ -285,6 +295,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/bytecraft2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/ByteCraft_ThesisLogo.PNG",
+        "group_avp": "https://drive.google.com/file/d/1IC_jS3mKZ_jIBmoLXhAdnOfWwwPPnZ0Z/view?usp=drive_link",
         "members": [
             "Ronald Dela Cruz Baharias",
             "Martin C. Villanueva",
@@ -312,6 +323,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/cramsolutions2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/C-Ram%20Solutions_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1JogDkpA4zHrzggc2euNzKME7BmELPGv5/view?usp=drive_link",
         "members": [
             "Guennevere C. Rito",
             "Jane Cristel A. Bohol",
@@ -339,6 +351,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/charles2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Charles%20and%20Friends_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/18C1LZA-EAzbfAKhwgoispPthaVvKLzTf/view?usp=drive_link",
         "members": [
             "Rene Vincent B. Cosme",
             "Pamela E. Lapiña",
@@ -367,6 +380,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/circuit2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Circuit%20Sentries_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1187JMSxum_towGHW_NJq8Ivgh_JpyWqV/view?usp=drive_link",
         "members": [
             "Kenjiro Ogura",
             "Cloud Marshall Bruce Marcellana",
@@ -396,6 +410,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/code2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Code%20Connoisseurs_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1oL-r3jSK527UhSOlRxgKv5OAV-17vXr3/view?usp=drive_link",
         "members": [
             "Anne Claudine A. Cando",
             "Alexander Gabriel S. Mortel",
@@ -425,6 +440,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/codecrusaders2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Code%20Crusaders_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1_6Kzg1VTzBgAp-0R0M3rPBSohxazsYgV/view?usp=drive_link",
         "members": [
             "Marielle D. Basanes",
             "Katrina Sofia D. Fabellar",
@@ -453,6 +469,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/codehers2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/CodeHers_Thesis%20Logo.png",
+        "group_avp": "https://drive.google.com/file/d/1kU4kXi3O5vhOUSAzOVOA1uKL8k4J_-B6/view?usp=drive_link",
         "members": [
             "Jann Ankaa Samantha Jumamil",
             "Hannah Andrea Atienza",
@@ -480,6 +497,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/codeware2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Codeware_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1AeIQvLzVeNDM3Q-ZSiO2qfBz0wh7jK-j/view?usp=drive_link",
         "members": [
             "Christian Dave D. Carlos",
             "Sean Marion R. Guelas",
@@ -507,6 +525,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/ctech2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/CTech_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1GO6ACoqID3J4SyrT76bPaat6fglsQOwo/view?usp=drive_link",
         "members": [
             "John Daniel De Guia",
             "Cedrick Angelo Chan",
@@ -534,6 +553,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/devsquad2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/DevSquad_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1n4sE2F2a2fSSoIS_oxo4xJTmQOe15Cgi/view?usp=drive_link",
         "members": [
             "Prince Edwin R. Zablan",
             "Sebastian Mhel T. Cadaing",
@@ -561,6 +581,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/eunoia2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Eunoia_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1uElIWrIsZgmxvtJDTm41mkmlNn7qZu2R/view?usp=drive_link",
         "members": [
             "Maria Charisse Joyce N. See",
             "Katrina Juliana M. Santos",
@@ -588,6 +609,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/gcode2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/G-CODE_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1aKePyWKltReqT6p6nnsMu-GXZOeJ-9LE/view?usp=drive_link",
         "members": [
             "Alessandra Gayle S. Cilot",
             "Kristianne M. Gabas",
@@ -615,6 +637,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/ggs2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/GGS(S)_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1vUM6xRr7h9AjfddgqB-G5j0R-9r69XMx/view?usp=drive_link",
         "members": [
             "Emily Anne A. Tan Sanchez",
             "Jienne Khalil A. Lechuga",
@@ -642,6 +665,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/goonation2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/GooNation_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1xCWheksFjuAX6_7ORVJKYu2LNTGKLsfN/view?usp=drive_link",
         "members": [
             "Justin Hendrick H. Cabral",
             "Julius Jr. N. Tomaquin",
@@ -669,6 +693,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/innotech2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/InnotechAcnefix%20logo.png",
+        "group_avp": "https://drive.google.com/file/d/1SFECebdfMUx5p2waEsDKPNooEsn4RC6o/view?usp=drive_link",
         "members": [
             "Jean Claude S. Castro",
             "Hanz Christian Matthew D. Dela Rosa",
@@ -696,6 +721,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/jpec2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/JPEC%20LOGO%20.png",
+        "group_avp": "https://drive.google.com/file/d/1-BNyh7tqYv1505q38c_e7VyRTuG1mAL7/view?usp=drive_link",
         "members": [
             "Carlo M. Dela Cruz",
             "Jam Benin N. Consing",
@@ -723,6 +749,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/json2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/JSON%20Derulo_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1H39DvVsUNQdeNPM2IDhGoz7QUneDQ18H/view?usp=drive_link",
         "members": [
             "Chelsea Anne Creer",
             "Miguelin P. III Arquiza",
@@ -750,6 +777,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/mircomarc1.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/micromarc-logo.png",
+        "group_avp": "https://drive.google.com/file/d/1P4epC7p7aB7O6WiNlFc7xwD0thpiTPR1/view?usp=drive_link",
         "members": [
             "Marc M. Olata",
             "Alpha Romer N. Coma",
@@ -777,6 +805,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/moby2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/MobyTime_LOGO.png",
+        "group_avp": "https://drive.google.com/file/d/1VY6_7c7YfMRI2cCgYE0nCYTLosS75G7p/view?usp=drive_link",
         "members": [
             "Noel Josh B. Casin",
             "Ryemdale E. Dela Cruz",
@@ -804,6 +833,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/operating2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/OperatingSisTeam_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1gmSflMklnQwv6FkqNQlOOIQH2NB5erjF/view?usp=drive_link",
         "members": [
             "James Patrick A. Rojas",
             "Jethro Angelo M. Javier",
@@ -831,6 +861,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/phaeton1.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Phaethon-Logo.png",
+        "group_avp": "https://drive.google.com/file/d/1qOSRV77kZNK1s4hcuUl7d5d1pkKZQ5cQ/view?usp=drive_link",
         "members": [
             "Benjamin M. Mallari",
             "Ervin Josh T. Pejo",
@@ -859,6 +890,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/quad2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/QuadPals_Thesis%20Logo.png",
+        "group_avp": "https://drive.google.com/file/d/15BxKNI25cLtODSI6sBVlJkmmmnEW3v9E/view?usp=drive_link",
         "members": [
             "Rakee D. Villas",
             "Adriane Altiche",
@@ -887,6 +919,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/rabbits2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/RabBits_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1ePMepgw-3xdPNW-vQu9G5LNSWcDEPnm8/view?usp=drive_link",
         "members": [
             "Aron Joash B. Pasamante",
             "Rab Karl D. Colasino",
@@ -916,6 +949,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/sudocode2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/SudoCodes_Thesis%20Logo.png",
+        "group_avp": "https://drive.google.com/file/d/1BFpYcqr4EIZZGL3wa3XysZNZSb7IGfvJ/view?usp=drive_link",
         "members": [
             "Ralph Clarence C. Bello",
             "Marnel Jade T. Carpio",
@@ -945,6 +979,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/neural2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Team%20Neural-Thesis%20Logo.png",
+        "group_avp": "https://drive.google.com/file/d/1TmJs9QNvR69EUP3RuZ8Jhn6q3R8onM-N/view?usp=drive_link",
         "members": [
             "Mark Marvin M. Dizon",
             "Rhode Danniel L. Reyes",
@@ -974,6 +1009,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/techtitans2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Tech%20Titans_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1A1zAFs2w6Rp4Z8xVpWXlrN-ou-gOAOKb/view?usp=drive_link",
         "members": [
             "Edilson D. Tuban",
             "Carl Joshua M. Coloma",
@@ -1003,6 +1039,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/techne2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Techne_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1i8KyQod-IYYIKSYOviUsDp8cn5WfL0H6/view?usp=drive_link",
         "members": [
             "Xynil Jhed Lacap",
             "John Aiverson P. Abong",
@@ -1032,6 +1069,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/techstack2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Techstack_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1i8KyQod-IYYIKSYOviUsDp8cn5WfL0H6/view?usp=drive_link",
         "members": [
             "Nash Ivan Ramos Ramos",
             "Alfredo C. Venturina IV",
@@ -1059,6 +1097,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/explorers2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/TechXplorers_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1oHOtQBlR8c8vmQPL-PcmfqWFQvl6XkG0/view?usp=drive_link",
         "members": [
             "Charles Benedict Ragasa",
             "Adriel Almond Torio"
@@ -1086,6 +1125,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/terra2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Terra_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1Lmr-zMBRGyC-3CppxSQwZrDRyp9eKyAK/view?usp=drive_link",
         "members": [
             "Mohammad Rafi Saiyari",
             "Franz Benjamin Africano",
@@ -1115,6 +1155,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/trail2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/TrailBlazing%20Analysts_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1dOA0ORQ1zfbCCc_IzzCfJdtu9vSdj8vs/view?usp=drive_link",
         "members": [
             "Earl Lanz Cristien M. Tan",
             "Kristine H. Abrina",
@@ -1144,6 +1185,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/vanguard2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/Vanguard_ThesisLogo.png",
+        "group_avp": "https://drive.google.com/file/d/1KAMcX75UgdjqUUKoq9BV7pwb-zHgRj6v/view?usp=drive_link",
         "members": [
             "Dhanniel Harvey B. Buan",
             "Julian Carl S. Oñate",
@@ -1173,6 +1215,7 @@ const groupsData = [
             "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group_picture/wayfinder2.jpg"
         ],
         "group_logo": "https://rwatggvmjanptoxqwdqu.supabase.co/storage/v1/object/public/CSExpo%20Assets/group-logo/WayFinder_Thesis%20Logo.png",
+        "group_avp": "https://drive.google.com/file/d/1IB0IWiSTUW4i1HFb9F9PxRG1pFcpeTsr/view?usp=drive_link",
         "members": [
             "Carlos Joaqin D. Buno",
             "John Raymond A. Villacorta",
